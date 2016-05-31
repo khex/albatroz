@@ -1,0 +1,32 @@
+header.top-header
+  .container
+    .row
+      .col-xs-3.header-logo
+        br                   
+        a(href='index.html')
+          img.img-responsive.logo(src='images/logo.png', alt='база відпочинку Альбатрос')
+      .col-md-9
+        nav.navbar.navbar-default
+          .container-fluid.nav-bar
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            // Collect the nav links, forms, and other content for toggling
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a.menu.active(href='#service') головна
+                li
+                  a.menu(href='#living') проживання
+                li
+                  a.menu(href='#magaz') кафе
+                li
+                  a.menu(href='#table') столики
+                li
+                  a.menu(href='#prices') ціни
+                li
+                  a.menu(href='#contact') контакти

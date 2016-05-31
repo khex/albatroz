@@ -1,0 +1,30 @@
+//  slider section
+section#home.slider
+  .container-fluid
+    .row
+      #carouselHacked.carousel.slide.carousel-fade(data-ride='carousel')
+        .header-backup
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src='images/slide-one.jpg', alt='')
+            //  <div class="carousel-caption">
+            //  <h1>providing</h1>
+            //  <p>highquality service for men &amp; women</p>
+            //  <button>learn more</button>
+            //  </div>                   
+          .item
+            img(src='images/slide-two.jpg', alt='')
+          .item
+            img(src='images/slide-three.jpg', alt='')
+          .item
+            img(src='images/slide-four.jpg', alt='')
+        //  Controls
+        //  fa-chevron-circle-left [&#xf137;]
+        //  fa-chevron-circle-right [&#xf138;]
+        a.left.carousel-control(href='#carouselHacked', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#carouselHacked', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
