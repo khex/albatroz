@@ -1,6 +1,6 @@
 {
-  "name": "homuletska",
-  "version": "1.0.0",
+  "name": "albatroz",
+  "version": "1.3.0",
   "description": "website of recreational complex \"Albatross\"",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khex/homuletska.git"
+    "url": "git+https://github.com/khex/albatroz.git"
   },
   "keywords": [
     "spa",
@@ -18,9 +18,9 @@
   "author": "khex",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/khex/homuletska/issues"
+    "url": "https://github.com/khex/albatroz/issues"
   },
-  "homepage": "https://github.com/khex/homuletska#readme",
+  "homepage": "https://github.com/khex/albatroz#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
