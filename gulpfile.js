@@ -4,7 +4,14 @@ var jade = require('gulp-jade');
 var prty = require('gulp-prettify');
 var less = require('gulp-less');
 
-gulp.task('templates', function() {
+gulp.task('less', function () {
+    return gulp
+    .src('./stylesheets/albatros.less')
+    .pipe(less())
+    .pipe(gulp.dest('./stylesheets'));
+});
+
+gulp.task('jade', function() {
     // do not work
     var YOUR_LOCALS = { pretty: true };
 
@@ -14,11 +21,4 @@ gulp.task('templates', function() {
         .pipe(gulp.dest(''));
 });
 
-gulp.task('less', function () {
-    return gulp
-    .src('./stylesheets/albatros.less')
-    .pipe(less())
-    .pipe(gulp.dest('./stylesheets'));
-});
-
-gulp.task('default', ['templates']);
+gulp.task('default', ['less', 'jade']);
