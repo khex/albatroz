@@ -1,8 +1,5 @@
 /**************************************
- *  Author Name: Mostafizur Rahman
- *  Author URI: http://mostafiz.me/
- *  Version: 1.1
- *  Template URI: mostafiz.me/demo/doctor
+ *  Original: mostafiz.me/demo/doctor
  *  
  *  TABLE OF CONTENTS
  *   1. COLOR PALETTE
@@ -11,12 +8,14 @@
  *   4. SLIDER
  *   5. SERVICE
  *   6. ABOUT
- *   7. DG-BLOCK
+ *   7. GALLERY
  *        # living
  *        # magaz
  *        # table
  *   8. PRICES
- *   9. FOOTER & CONTACTS + MAP
+ *   9. CONTACTS & MAP
+ *  10. FOOTER
+ *  11. RESPONSIVE VARIABLES  
 **************************************/
 /**************************************
  *  1. COLOR PALETTE
@@ -43,6 +42,9 @@
 /**************************************
  *  2. GENERAL STYLE
 **************************************/
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -155,6 +157,12 @@ ul.nav {
   padding: 0 !important;
   background: #000000 !important;
 }
+.item {
+  position: relative;
+}
+.carousel {
+  height: 100%;
+}
 .carousel-caption {
   position: absolute;
   text-align: left;
@@ -228,8 +236,107 @@ ul.nav {
 .carousel-inner .item {
   height: 100%;
 }
-.item {
-  position: relative;
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+  opacity: 1;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0) 100%);
+}
+@media all and (transform-3d) {
+  .carousel-fade .carousel-inner > .item.next {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev.right {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev.right {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 /**************************************
  *   5. SERVICE
@@ -338,7 +445,7 @@ ul.nav {
   padding-bottom: 30px;
 }
 /**************************************
- *   6. GALLERY
+ *   7. GALLERY
 **************************************/
 .dg-block h2 {
   font-size: 90px;
@@ -492,14 +599,38 @@ ul.nav {
 /**************************************
  *   8. PRICES
 **************************************/
-/*  contact section  */
+.prices h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.panel {
+  margin-top: 20px;
+}
+.panel .panel-heading {
+  background-color: #6c9de1;
+}
+.panel .panel-heading h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+.table {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.table .table.no-border tr th {
+  border-width: 0;
+}
+/**************************************
+ *   9. CONTACTS & MAP
+**************************************/
+.contact {
+  left: 0;
+  margin-top: 0;
+  background: #4984d4;
+}
 .contact-caption {
   background: #4984d4;
-  margin-top: 120px;
-}
-.contact-heading h2 {
-  color: #ffffff;
-  font-size: 90px;
+  margin-bottom: 60px;
 }
 .contact-info {
   padding-left: 40px;
@@ -585,30 +716,11 @@ ul.nav {
   padding-top: 15px;
   text-align: right;
 }
-/*  gmap  */
-#map {
-  height: 830px;
-}
-.map {
-  position: relative;
-  overflow: hidden;
-}
-.contact {
-  position: absolute;
-  width: 100%;
-  height: 830px;
-  margin-top: 0px;
-  left: 0;
-  margin-top: -830px;
-  background: rgba(0, 0, 0, 0.51);
-}
-/*  footer  */
-.footer-para {
-  margin: 0;
-  padding: 0;
-}
+/**************************************
+ *  10. FOOTER
+**************************************/
 .footer p {
-  font-size: 12px;
+  font-size: 18px;
   color: #000000;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -623,118 +735,14 @@ ul.nav {
 .footer a i.fa:hover {
   color: #6c9de1;
 }
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-  opacity: 1;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0) 100%);
-}
-html {
-  height: 100%;
-}
-.carousel {
-  height: 100%;
-}
-@media all and (transform-3d) {
-  .carousel-fade .carousel-inner > .item.next {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active.right {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.prev {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active.left {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.next.left {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.prev.right {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@media (-webkit-transform-3d) {
-  .carousel-fade .carousel-inner > .item.next {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active.right {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.prev {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active.left {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.next.left {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.prev.right {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.active {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.footer-para {
+  margin: 0;
+  padding: 0;
 }
 /******************************
-responsive area
+ *  11. RESPONSIVE VARIABLES
 ********************************/
-/***  md ***/
+/**  md  **/
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-default .navbar-nav > li > a {
     font-size: 20px;
@@ -845,7 +853,7 @@ responsive area
     margin-top: 140px;
   }
 }
-/* XS Portrait */
+/* xs Portrait */
 @media (max-width: 479px) {
   .top-header img.logo {
     margin: 20px 10px;

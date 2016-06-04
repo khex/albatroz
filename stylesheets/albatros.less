@@ -1,8 +1,5 @@
 /**************************************
- *  Author Name: Mostafizur Rahman
- *  Author URI: http://mostafiz.me/
- *  Version: 1.1
- *  Template URI: mostafiz.me/demo/doctor
+ *  Original: mostafiz.me/demo/doctor
  *  
  *  TABLE OF CONTENTS
  *   1. COLOR PALETTE
@@ -16,7 +13,9 @@
  *        # magaz
  *        # table
  *   8. PRICES
- *   9. FOOTER & CONTACTS + MAP
+ *   9. CONTACTS & MAP
+ *  10. FOOTER
+ *  11. RESPONSIVE VARIABLES  
 **************************************/
 
 /**************************************
@@ -51,6 +50,9 @@
 /**************************************
  *  2. GENERAL STYLE
 **************************************/
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -173,6 +175,12 @@ ul.nav {
     padding: 0 !important;
     background: @color_08 !important;
 }
+.item {
+    position: relative;
+}
+.carousel {
+    height: 100%;
+}
 .carousel-caption {
     h1 {
         font-size: 90px;
@@ -246,8 +254,119 @@ ul.nav {
     }
     /* end just for demo purpose */
 }
-.item {
-    position: relative;
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        .active {
+            opacity: 1;
+        }
+        .active.left {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+        .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+        .next.left {
+            opacity: 1;
+        }
+        .prev.right {
+            opacity: 1;
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+        opacity: 1;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);
+    }
+}
+@media all and (transform-3d) {
+    .carousel-fade {
+        .carousel-inner {
+            >.item.next {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active.right {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.prev {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active.left {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.next.left {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.prev.right {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+@media (-webkit-transform-3d) {
+    .carousel-fade {
+        .carousel-inner {
+            >.item.next {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active.right {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.prev {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active.left {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.next.left {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.prev.right {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            >.item.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
 }
 
 
@@ -525,20 +644,53 @@ ul.nav {
     margin-top: 64px;
 }
 
+
 /**************************************
  *   8. PRICES
 **************************************/
+.prices {
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+.panel {
+    margin-top: 20px;
+    .panel-heading {
+        background-color: @color_02;
+        h3 {
+            font-size: 18px;
+            color: @color_01;
+        }
+    }
+}
 
-/*  contact section  */
+.table {
+    font-size: 18px;
+    margin-bottom: 0;
+    //  delete upper line
+    .table.no-border tr th {
+        border-width: 0;
+    }
+}
+
+
+/**************************************
+ *   9. CONTACTS & MAP
+**************************************/
+.contact {
+    //  position: relative; // absolute;
+    //  width: 100%;
+    //  height: 830px;
+    //  margin-top: 0px;
+    left: 0;
+    margin-top: 0; // -830px;
+    background: @color_06; //rgba(0, 0, 0, 0.51);
+}
 .contact-caption {
     background: @color_06;
-    margin-top: 120px;
-}
-.contact-heading {
-    h2 {
-        color: @color_01;
-        font-size: 90px;
-    }
+    // margin-top: 120px;
+    margin-bottom: 60px;
 }
 .contact-info {
     padding-left: 40px;
@@ -625,33 +777,13 @@ ul.nav {
     text-align: right;
 }
 
-/*  gmap  */  
-#map {
-    height: 830px;
-}
-.map {
-    position: relative;
-    overflow: hidden;
-}
 
-.contact {
-    position: absolute;
-    width: 100%;
-    height: 830px;
-    margin-top: 0px;
-    left: 0;
-    margin-top: -830px;
-    background: rgba(0, 0, 0, 0.51);
-}
-
-/*  footer  */
-.footer-para {
-    margin: 0;
-    padding: 0;
-}
+/**************************************
+ *  10. FOOTER
+**************************************/
 .footer {
     p {
-        font-size: 12px;
+        font-size: 18px;
         color: @color_08;
         font-family: @font-family_2;
         font-weight: 300;
@@ -669,135 +801,16 @@ ul.nav {
         }
     }
 }
-
-.carousel-fade {
-    .carousel-inner {
-        .item {
-            opacity: 0;
-            transition-property: opacity;
-        }
-        .active {
-            opacity: 1;
-        }
-        .active.left {
-            left: 0;
-            opacity: 0;
-            z-index: 1;
-        }
-        .active.right {
-            left: 0;
-            opacity: 0;
-            z-index: 1;
-        }
-        .next.left {
-            opacity: 1;
-        }
-        .prev.right {
-            opacity: 1;
-        }
-    }
-    .carousel-control {
-        z-index: 2;
-        opacity: 1;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);
-    }
-}
-html {
-    height: 100%;
-}
-.carousel {
-    height: 100%;
+.footer-para {
+    margin: 0;
+    padding: 0;
 }
 
-
-@media all and (transform-3d) {
-    .carousel-fade {
-        .carousel-inner {
-            >.item.next {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active.right {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.prev {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active.left {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.next.left {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.prev.right {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-        }
-    }
-}
-@media (-webkit-transform-3d) {
-    .carousel-fade {
-        .carousel-inner {
-            >.item.next {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active.right {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.prev {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active.left {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.next.left {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.prev.right {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            >.item.active {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-        }
-    }
-}
 
 /******************************
-responsive area
+ *  11. RESPONSIVE VARIABLES
 ********************************/
-
-/***  md ***/
+/**  md  **/
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-default {
         .navbar-nav {
@@ -939,7 +952,7 @@ responsive area
     }
 }
 
-/* XS Portrait */
+/* xs Portrait */
 @media (max-width: 479px) {
     .top-header {
         img.logo {
