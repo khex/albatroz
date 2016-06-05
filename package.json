@@ -1,6 +1,6 @@
 {
   "name": "albatroz",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "website of recreational complex \"Albatross\"",
   "main": "index.js",
   "scripts": {
