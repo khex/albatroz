@@ -22,29 +22,22 @@
  *  1. COLOR PALETTE
  *  http://www.color-hex.com
  *  collor Palette http://goo.gl/gE0aTP
+ *************************************/
+@color_01: #ffffff;  /*  white       */
+@color_02: #000000;  /*  black       */
 
-@color_02: #42b3e5;       blue-sky
-@color_06: @color_06;     blue-dark
-@color_07: #3a9ecb;
-**************************************/
-@color_01: #ffffff;    /*  white     */
-@color_08: #000000;    /*  black     */
+@color_03: #4984d4;  /*  volya-dark  */
+@color_04: #6c9de1;  /*  volya-sky   */
+@color_05: #95bbef;  /*  volya-light */
 
-@color_02: #6c9de1;    /*  volya-sky */
-@color_06: #4984d4;    /*  volya-dark*/
-@color_07: #3a9ecb;    /*  volya-?   */
-@color_10: #ffca00;    /*  yellow    */
-@color_05: #383838;    /*  gray-22   */
-@color_03: #737373;    /*  gray-45   */
-@color_09: #b1b1b1;    /*  gray-light*/
-@color_04: #2a2a2a;    /*  gray-smth */
- 
-@color_011: #3ba0cc;   /* .arrow-top */
-@color_012: #13849c;   /* .contact-info*/
-@color_013: #53cde5;   /* .info-detail */
+@color_06: #737373;  /*  gray-45     */
+@color_07: #383838;  /*  gray-22     */
+@color_08: #2a2a2a;  /*  gray-smth   */
+@color_09: #b1b1b1;  /*  gray-light  */
 
-@font-family_1: 'BenchNine', sans-serif;
-@font-family_2: 'Open Sans', sans-serif;
+@color_10: #ffca00;  /*  yellow      */
+
+@font-family: 'Open Sans', sans-serif;
 
 
 /**************************************
@@ -56,13 +49,13 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: @font-family_1;
+    font-family: @font-family;
     height: 100%;
 }
 li {
     list-style: none;
     a.active {
-        color: @color_03 !important;
+        color: @color_06 !important;
     }
 }
 a {
@@ -80,7 +73,7 @@ h1 {
 }
 h2 {
     font-size: 90px;
-    color: @color_02;
+    color: @color_04;
     margin-top: 50px;
 }
 
@@ -89,7 +82,7 @@ h2 {
   *  3. HEADER & NAVBAR
 **************************************/
 .top-header {
-    background: @color_06 !important;
+    background: @color_03 !important;
     position: fixed;
     width: 100%;
     z-index: 99999;
@@ -133,7 +126,7 @@ h2 {
                 padding: 14px 15px;
                 font-weight: bold;
                 &:hover {
-                    color: yellow;
+                    color: @color_10;
                 }
             }
             a.active {
@@ -143,7 +136,7 @@ h2 {
     }
     .navbar-toggle {
         .icon-bar {
-            background-color: @color_08;
+            background-color: @color_02;
         }
         border-color: @color_01;
         margin-top: 4px;
@@ -173,7 +166,7 @@ ul.nav {
 .slider-wrapper {
     margin: 0;
     padding: 0 !important;
-    background: @color_08 !important;
+    background: @color_02 !important;
 }
 .item {
     position: relative;
@@ -200,7 +193,7 @@ ul.nav {
     left: 12%;
     line-height: 1;
     top: 50%;
-    margin-top: -100px;
+    margin-top: 65px;
 }
 .carousel-control {
     width: 5%;
@@ -242,10 +235,10 @@ ul.nav {
     }
 }
 .carousel-inner {
-    background: -webkit-linear-gradient(left, @color_08, blue);
-    background: -o-linear-gradient(left, @color_08, blue);
-    background: -moz-linear-gradient(left, @color_08, blue);
-    background: linear-gradient(to left, @color_08, blue);
+    background: -webkit-linear-gradient(left, @color_02, blue);
+    background: -o-linear-gradient(left, @color_02, blue);
+    background: -moz-linear-gradient(left, @color_02, blue);
+    background: linear-gradient(to left, @color_02, blue);
     position: relative;
     /* just for demo purpose */
     height: 100%;
@@ -376,19 +369,14 @@ ul.nav {
 .service {
     margin-top: 30px;
     .service-body {
-        background: url(../images/pattern.jpg);
+        background: @color_03; // url(../images/pattern.jpg);
         background-repeat: repeat-y;
         padding: 20px;
     }
-    h2 {
-        font-size: 90px;
-        color: @color_01;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
     h4 {
-        font-size: 24px;
+        font-size: 22px;
         color: @color_01;
+        line-height: 1.3;
         margin-top: 0;
         display: block;
     }
@@ -410,11 +398,11 @@ ul.nav {
     position: relative;
     &:hover {
         .about-details {
-            background: @color_06;
+            background: @color_03;
         }
         .pentagon-text {
             h1 {
-                color: @color_06;
+                color: @color_03;
             }
         }
     }
@@ -422,7 +410,7 @@ ul.nav {
 .pentagon-text {
     h1 {
         font-size: 60px;
-        color: @color_05;
+        color: @color_07;
         margin-top: 0;
         transition: all .7s ease 0s;
         -webkit-transition: all .7s ease 0s;
@@ -464,7 +452,7 @@ ul.nav {
     }
 }
 .about-details {
-    background: @color_04;
+    background: @color_08;
     border-top: 2px solid @color_01;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
@@ -479,7 +467,7 @@ ul.nav {
     p {
         font-size: 16px;
         color: @color_01;
-        font-family: @font-family_2;
+        font-family: @font-family;
         padding: 0 25px;
         padding-bottom: 30px;
     }
@@ -492,7 +480,7 @@ ul.nav {
 .dg-block {
     h2 {
         font-size: 90px;
-        color: @color_02;
+        color: @color_04;
         margin-bottom: 0;
         margin-top: 0; // 35px;        
     }
@@ -503,10 +491,10 @@ ul.nav {
     p {
         font-size: 16px;
         color: @color_01;
-        font-family: @font-family_2;
+        font-family: @font-family;
     }
     .gallery-detail {
-        background: @color_02;
+        background: @color_04;
         margin-top: 30px;
         padding: 10px;
         position: relative;
@@ -525,7 +513,7 @@ ul.nav {
     padding-left: 0;
     > h2 {
         font-size: 50px;
-        color: @color_02;
+        color: @color_04;
         margin-top: 30px;
     }
     > li {
@@ -537,7 +525,7 @@ ul.nav {
 
         list-style:outside none none;
         a {
-            border: 3px solid @color_02;
+            border: 3px solid @color_04;
             border-radius: 3px;
             display: block;
             overflow: hidden;
@@ -657,9 +645,9 @@ ul.nav {
 .panel {
     margin-top: 20px;
     .panel-heading {
-        background-color: @color_02;
+        background-color: @color_04;
         h3 {
-            font-size: 18px;
+            font-size: 24px;
             color: @color_01;
         }
     }
@@ -685,10 +673,10 @@ ul.nav {
     //  margin-top: 0px;
     left: 0;
     margin-top: 0; // -830px;
-    background: @color_06; //rgba(0, 0, 0, 0.51);
+    background: @color_03; //rgba(0, 0, 0, 0.51);
 }
 .contact-caption {
-    background: @color_06;
+    background: @color_03;
     // margin-top: 120px;
     margin-bottom: 60px;
 }
@@ -700,7 +688,7 @@ ul.nav {
         color: @color_01;
         text-transform: uppercase;
         font-weight: bold;
-        border-bottom: 1px solid @color_012;
+        border-bottom: 1px solid @color_05;
         padding-bottom: 12px;
         margin-bottom: 0;
     }
@@ -708,7 +696,7 @@ ul.nav {
         margin: 0;
         padding: 0;
         li {
-            font-family: @font-family_2;
+            font-family: @font-family;
             font-size: 14px;
             color: @color_01;
             span {
@@ -723,56 +711,12 @@ ul.nav {
         height: 38px;
     }
 }
-.contact-form {
-    h3 {
-        padding-left: 0;
-        font-size: 30px;
-        color: @color_01;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-bottom: 1px solid @color_012;
-        padding-bottom: 12px;
-        margin-bottom: 0;
-    }
-    input {
-        width: 100%;
-        height: 40px;
-        background: @color_01;
-        font-size: 13px;
-        color: @color_06;
-        font-family: @font-family_2;
-        padding: 12px;
-        border: 0;
-        margin-bottom: 12px;
-    }
-    textarea {
-        font-family: @font-family_2;
-        padding: 12px;
-        width: 100%;
-        height: 140px;
-        border: 0;
-        margin-bottom: 12px;
-    }
-    input.submit-btn {
-        width: 180px;
-        height: 50px;
-        float: right;
-        font-size: 24px;
-        color: @color_01;
-        background: url(../img/btn-bg.jpg);
-        background-repeat: no-repeat;
-        padding: 0;
-        font-family: @font-family_1;
-        font-weight: bold;
-    }
-    padding-right: 40px;
-}
 .info-detail {
-    border-top: 1px solid @color_013;
+    border-top: 1px solid @color_05;
     padding-top: 15px;
 }
 .form {
-    border-top: 1px solid @color_013;
+    border-top: 1px solid @color_05;
     padding-top: 15px;
     text-align: right;
 }
@@ -784,8 +728,8 @@ ul.nav {
 .footer {
     p {
         font-size: 18px;
-        color: @color_08;
-        font-family: @font-family_2;
+        color: @color_02;
+        font-family: @font-family;
         font-weight: 300;
         margin: 0;
         padding: 25px 0;
@@ -796,7 +740,7 @@ ul.nav {
             color: @color_09;
             padding: 22px 10px;
             &:hover {
-                color: @color_02;
+                color: @color_04;
             }
         }
     }
@@ -873,7 +817,7 @@ ul.nav {
         button {
             width: 180px;
             height: 50px;
-            background: @color_07;
+            background: @color_05;
             color: @color_01;
             font-size: 22px;
         }
@@ -1011,7 +955,7 @@ ul.nav {
     .about {
         h2 {
             font-size: 50px;
-            color: @color_02;
+            color: @color_04;
             margin-top: 30px;
         }
     }
