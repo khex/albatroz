@@ -7,8 +7,11 @@
 
 Task list
 ==================
+  - [x] change style to "Bootstrap 3"
+  - [ ] delete unused CSS styles
   - [ ] show mini gmap in contacts
-  - [ ] create price tables
+  - [x] create price tables
+  - [ ] add Google Statistic Script
 
 Готель
 ========

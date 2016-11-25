@@ -1,0 +1,62 @@
+//- hotel.jade
+doctype html PUBLIC "-//W3C//DTD XHTML Basic 1.1//UK"
+html(lang='uk')
+  include ../head.jade
+  body
+    include ../navbar.jade
+    div.container
+      div.col-md-12
+        img.img-responsive.img-rounded(src="images/slide-four.jpg" alt="Main Logo")
+
+      div.col-md-4.col-sm-6
+        div.panel.panel-default
+          div.panel-body
+            p На території бази знаходиться кафе оформлене у мисливському стилі, що створює затишну атмосферу. Зкуштуйте смачної української кухні чи наші фірмові страви - деруни по селянськи (в глечику зі свининою) чи рибу запечену з овочами.
+            | Також у нашій крамнчці Ви можете придбати морозиво, проходжувальні напої, пиво та дещо міцніше.
+      
+      div.col-md-8.col-sm-6 
+        div.demo-gallery
+          ul#magaz-gallery
+            li(data-src='https://img-fotki.yandex.ru/get/29815/179541099.0/0_142a50_8eeadf10_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-1-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29815/179541099.0/0_142a51_c3f0658c_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-2-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/47741/179541099.0/0_142a52_846e256e_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-3-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/47741/179541099.0/0_142a53_9a6a8eeb_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-4-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/53211/179541099.0/0_142a54_553ed646_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-5-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29815/179541099.0/0_142a55_42d38486_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-6-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a56_3751ff1a_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-7-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/25939/179541099.0/0_142a57_978cc5b_orig.jpg')
+              a(href='')
+                img.img-responsive(src='images/thumbs/mag-8-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+
+    include ../sections/sect-contact.jade
+  include ../footer.jade

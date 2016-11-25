@@ -4,12 +4,10 @@ html(lang='uk')
   include head.jade
   body
     include navbar.jade
-    include sections/sect-slider.jade
-    include sections/sect-service.jade
-    include sections/sect-about.jade
-    include sections/sect-living.jade
-    include sections/sect-magaz.jade
-    include sections/sect-table.jade
-    include sections/sect-prices.jade
-    include sections/sect-contact.jade
-    include footer.jade
+    div.container
+      include sections/sect-slider.jade
+      include sections/sect-service.jade
+      include sections/sect-about.jade
+      include sections/sect-prices.jade
+      include sections/sect-contact.jade
+  include footer.jade
