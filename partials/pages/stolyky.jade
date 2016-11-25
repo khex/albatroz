@@ -1,0 +1,54 @@
+//- hotel.jade
+doctype html PUBLIC "-//W3C//DTD XHTML Basic 1.1//UK"
+html(lang='uk')
+  include ../head.jade
+  body
+    include ../navbar.jade
+    div.container
+      div.col-md-12
+        img.img-responsive.img-rounded(src="images/slide-four.jpg" alt="Main Logo")
+
+      div.col-md-12
+        h2 Столики
+        div.panel.panel-default
+          div.panel-body
+            p Загалом на нашій базі знаходиться 24 столика на 10, 20 та 30 чоловік. Всі вони мають дашок, котрий захиститьВас та вашу компанію від палючого сонця вдень та від дощу у непогоду, та мангал. Обирайте самі місце відпочинку - у затінку на берегу озера чи на відкритій сонячній галявні. 
+            p Вартість будь-якого столика - <b>150</b> грн.
+            p Вартість в'язки дров - <b>30</b> грн.
+      
+      div.col-md-12 
+        div.demo-gallery
+          ul#table-gallery
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a49_4dba3139_orig.jpg', data-sub-html='<p>цетральний столик на 30 осіб</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-2-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a4a_a93ced8d_orig.jpg', data-sub-html='<p>столик на 20 чоловік</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-3-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a4b_4f87ec0c_orig.jpg', data-sub-html='<p>столик на 10 чоловік</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-4-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a4c_7b1aab8c_orig.jpg', data-sub-html='<p>на території комплексу розташовано 24 столики</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-5-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a4d_9172fdc_orig.jpg', data-sub-html='<p>столик на 20 чоловік</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-6-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+            li(data-src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a4e_228836a4_orig.jpg', data-sub-html='<p>столик на 20 чоловік</p>')
+              a(href='')
+                img.img-responsive(src='images/thumbs/tab-7-thumb.jpg')
+                .demo-gallery-poster
+                  img(src='images/zoom.png')
+
+    include ../sections/sect-contact.jade
+  include ../footer.jade

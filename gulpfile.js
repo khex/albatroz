@@ -19,10 +19,10 @@ gulp.task('jade', function() {
 
     gulp.src([
         './partials/index.jade',
-        //'./partials/hotel-ta-kolyby.jade',
         './partials/pages/kafe.jade',
-        //'./partials/stolyky-besidky.jade',
-        //'./partials/ciny-prices.jade'
+        './partials/pages/hotel.jade',
+        './partials/pages/kolyby.jade',
+        './partials/pages/stolyky.jade',
         ])
         .pipe(jade({ locals: YOUR_LOCALS }))
         // .pipe(prty({indent_size: 2}))

@@ -12,6 +12,10 @@ Task list
   - [ ] show mini gmap in contacts
   - [x] create price tables
   - [ ] add Google Statistic Script
+  - [ ] страница Готель
+  - [ ] страница Колиби
+  - [х] страница Кафе
+  - [ ] страница Столики
 
 Готель
 ========
