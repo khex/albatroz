@@ -1,72 +1,73 @@
-div.row#constacts
-  div.col-md-6.contact-info
-    h3 КОНТАКТИ
-      .info-detail
-        ul
-          li
-            i.fa.fa-calendar
-            span 
-              b Понеділок - Неділя:
-              |  з 8:00 до 23:00
-          li
-            i.fa.fa-map-marker
-            span Адреса:
-            |  Львівська обл., Жовківський р-н.,
-          li
-            i.fa.fa-map-marker
-            span село:
-            |  Воля-Гомулецька, вул. Озерна 6
-          li
-            i.fa.fa-phone
-            span Телефон:
-            |  (097) 457 27 91
-          li
-            i.fa.fa-bus
-            span Маршрутка:
-            |  22 від "Міленіуму"
-          li
-            i.fa.fa-car
-            span Брюховичі:
-            |  поворот направо біля чебуречної. 
-          li
-            i.fa.fa-facebook
-            span Facebook:
-            |  <a href="http://facebook.com/albatroz.lviv">facebook.com/albatroz.lviv</a>
+div.container
+  div.row#constacts
+    div.col-md-6.contact-info
+      h3 КОНТАКТИ
+        .info-detail
+          ul
+            li
+              i.fa.fa-calendar
+              span 
+                b Понеділок - Неділя:
+                |  з 8:00 до 23:00
+            li
+              i.fa.fa-map-marker
+              span Адреса:
+              |  Львівська обл., Жовківський р-н.,
+            li
+              i.fa.fa-map-marker
+              span село:
+              |  Воля-Гомулецька, вул. Озерна 6
+            li
+              i.fa.fa-phone
+              span Телефон:
+              |  (097) 457 27 91
+            li
+              i.fa.fa-bus
+              span Маршрутка:
+              |  22 від "Міленіуму"
+            li
+              i.fa.fa-car
+              span Брюховичі:
+              |  поворот направо біля чебуречної. 
+            li
+              i.fa.fa-facebook
+              span Facebook:
+              |  <a href="http://facebook.com/albatroz.lviv">facebook.com/albatroz.lviv</a>
 
-  //div.col-md-6.col-md-offset-1.contact-info.text-left
-  div.col-md-6.contact-map
-    h3 МАПА
-    .image
-      img(src='images/map.jpg')
+    //div.col-md-6.col-md-offset-1.contact-info.text-left
+    div.col-md-6.contact-map
+      h3 МАПА
+      .image
+        img(src='images/map.jpg')
 
-  //  footer
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
-  //  lightgallery
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-thumbnail.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-fullscreen.min.js')
-  //  custom JS
-  script(src='javascript/smoothscroll.js')
-  script(src='javascript/custom.js')
-  script(src='javascript/ya-metrika.js')
-  noscript
-    .ya-metrika
-      img(src="https://mc.yandex.ru/watch/37760275", style="position:absolute; left:-9999px;", alt="")
+    //  footer
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+    //  lightgallery
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-thumbnail.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-fullscreen.min.js')
+    //  custom JS
+    script(src='javascript/smoothscroll.js')
+    script(src='javascript/custom.js')
+    script(src='javascript/ya-metrika.js')
+    noscript
+      .ya-metrika
+        img(src="https://mc.yandex.ru/watch/37760275", style="position:absolute; left:-9999px;", alt="")
 
-  script(type='text/javascript').
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-80151883-1', 'auto');
-    ga('send', 'pageview');
-  
+    script(type='text/javascript').
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-80151883-1', 'auto');
+      ga('send', 'pageview');
+    
 
-  script(type='text/javascript').
-    $(document).ready(function() {
-      $("#lightgallery").lightGallery();
-      $("#colyby-gallery").lightGallery();
-      $("#magaz-gallery").lightGallery(); 
-      $("#table-gallery").lightGallery(); 
-    });
+    script(type='text/javascript').
+      $(document).ready(function() {
+        $("#lightgallery").lightGallery();
+        $("#colyby-gallery").lightGallery();
+        $("#magaz-gallery").lightGallery(); 
+        $("#table-gallery").lightGallery(); 
+      });
