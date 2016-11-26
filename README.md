@@ -11,7 +11,8 @@ Task list
   - [ ] delete unused CSS styles
   - [ ] show mini gmap in contacts
   - [x] create price tables
-  - [ ] add Google Statistic Script
+  - [ ] add Google Analytics
+  - [ ] add Google Web Master Console
   - [ ] страница Готель
   - [ ] страница Колиби
   - [х] страница Кафе
