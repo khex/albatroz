@@ -18,11 +18,11 @@ gulp.task('jade', function() {
     var YOUR_LOCALS = { pretty: true };
 
     gulp.src([
-        './partials/index.jade',
-        './partials/pages/kafe.jade',
-        './partials/pages/hotel.jade',
-        './partials/pages/kolyby.jade',
-        './partials/pages/stolyky.jade',
+        './templates/index.jade',
+        './templates/kafe.jade',
+        './templates/hotel.jade',
+        './templates/kolyby.jade',
+        './templates/stolyky.jade',
         ])
         .pipe(jade({ locals: YOUR_LOCALS }))
         // .pipe(prty({indent_size: 2}))
