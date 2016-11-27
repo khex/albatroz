@@ -7,17 +7,18 @@
 
 Task list
 ==================
-  - [x] change style to "Bootstrap 3"
   - [ ] add 'alt' to all images
   - [ ] all text to 'відпочинковий комплекс'
   - [ ] delete unused CSS styles
-  - [ ] show mini gmap in contacts
+  - [ ] show mini gmap @ index
+  - [ ] prises > footer
+  - [x] add Google Analytics
+  - [x] add Google Web Master Console
+  - [x] change style to "Bootstrap 3"
   - [x] create price tables
-  - [ ] add Google Analytics
-  - [ ] add Google Web Master Console
   - [x] страница Готель
   - [x] страница Колиби
-  - [х] страница Кафе
+  - [x] страница Кафе
   - [x] страница Столики
 
 Готель
