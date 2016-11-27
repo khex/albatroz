@@ -17,10 +17,19 @@ gulp.task('jade', function() {
     // do not work
     var YOUR_LOCALS = { pretty: true };
 
-    gulp.src('./partials/index.jade')
+    gulp.src([
+        './templates/index.jade',
+        './templates/kafe.jade',
+        './templates/hotel.jade',
+        './templates/kolyby.jade',
+        './templates/stolyky.jade',
+        ])
         .pipe(jade({ locals: YOUR_LOCALS }))
         // .pipe(prty({indent_size: 2}))
         .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['less', 'jade']);
+// old
+//  gulp.task('default', ['less', 'jade']);
+
+gulp.task('default', ['jade']);
