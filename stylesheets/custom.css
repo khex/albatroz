@@ -11,7 +11,10 @@
     color: #ffca00;
 }
 #slider {
-    margin-top: 65px;
+    margin-top: 50px;
+}
+.blockquote > p {
+    color: #4984d4;
 }
 #service {
     margin-top: 20px;
@@ -20,11 +23,10 @@
     display: block;
     font-size: 22px;
 }
-#constacts {
+#contacts {
     background-color: #4984d4;
 }
-.contact-info h3,
-.contact-map  h3 {
+.contact-info h3{
     color: #ffffff;
     font-size: 26px;
     font-weight: bold;
@@ -48,6 +50,10 @@
     padding-right: 12px;
     width: 25px;
 }
+
+.info-img {
+    margin-top: 75px;
+};
 
 .demo-gallery>ul{margin-bottom:0;padding-left:0}
 .demo-gallery>ul>h2{font-size:50px;color:#6c9de1;margin-top:30px}

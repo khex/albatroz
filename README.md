@@ -8,15 +8,17 @@
 Task list
 ==================
   - [x] change style to "Bootstrap 3"
+  - [ ] add 'alt' to all images
+  - [ ] all text to 'відпочинковий комплекс'
   - [ ] delete unused CSS styles
   - [ ] show mini gmap in contacts
   - [x] create price tables
   - [ ] add Google Analytics
   - [ ] add Google Web Master Console
-  - [ ] страница Готель
-  - [ ] страница Колиби
+  - [x] страница Готель
+  - [x] страница Колиби
   - [х] страница Кафе
-  - [ ] страница Столики
+  - [x] страница Столики
 
 Готель
 ========
