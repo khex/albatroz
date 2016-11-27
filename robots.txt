@@ -1,6 +1,4 @@
 User-agent: *
 Disallow: /javascript/
 Disallow: /partials/
-Disallow: /stylesheets/
-Disallow: /images/thumbs/
 Host: albatroz.lviv.ua
