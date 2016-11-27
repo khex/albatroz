@@ -4,50 +4,51 @@ html(lang='uk')
   include ./partials/head.jade
   body
     include ./partials/navbar.jade
-    div.container
-      div.col-md-12
-        img.img-responsive.img-rounded(src="images/slide-four.jpg" alt="Main Logo")
 
-      div.col-md-12
-        h2 Колиби
-        div.panel.panel-default
-          div.panel-body
+    div.container
+      div.row#slider
+        div.col-md-12
+          img.img-responsive.img-rounded(src="images/slide-four.jpg" alt="Main Logo")
+
+      div.row#service
+        div.col-md-5
+          h2 Колиби
+          blockquote.blockquote
             p Хочете заночувати великою компанією та по більш низькій ціні - значить вам потрібна колиба. Наші колиби розраховані на 4х чоловік. У вартість також входить набор постілі та накритий столик з мангалом біля самої колиби. 
             p Вартість колиби - <b>270</b> грн./добу
-      
-      div.col-md-12
-        div.demo-gallery
-          ul#lightgallery
-            li(data-src='https://img-fotki.yandex.ru/get/55905/179541099.0/0_142a40_877b5502_orig.jpg', data-sub-html='<p>на території комплексу розташовано 4 колиби</p>')
-              a(href='')
-                img.img-responsive(src='images/thumbs/kol-1-thumb.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
-            li(data-src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a41_a2c42044_orig.jpg', data-sub-html='<p></p>')
-              a(href='')
-                img.img-responsive(src='images/thumbs/kol-2-thumb.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
-            li(data-src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a42_7df866c8_orig.jpg', data-sub-html='<p></p>')
-              a(href='')
-                img.img-responsive(src='images/thumbs/kol-3-thumb.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
-            li(data-src='images/thumbs/kol-4.jpg', data-sub-html='<p>при оренді колиби - безкоштовно столик з мангалом</p>')
-              a(href='')
-                img.img-responsive(src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a43_fe87ef89_orig.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
-            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a45_d7c90b52_orig.jpg', data-sub-html='<p></p>')
-              a(href='')
-                img.img-responsive(src='images/thumbs/kol-6-thumb.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
-            li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a47_85782a26_orig.jpg', data-sub-html='<p></p>')
-              a(href='')
-                img.img-responsive(src='images/thumbs/kol-8-thumb.jpg')
-                .demo-gallery-poster
-                  img(src='images/zoom.png')
 
+        div.col-md-7
+          div.demo-gallery
+            ul#lightgallery
+              li(data-src='https://img-fotki.yandex.ru/get/55905/179541099.0/0_142a40_877b5502_orig.jpg', data-sub-html='<p>на території комплексу розташовано 4 колиби</p>')
+                a(href='')
+                  img.img-responsive(src='images/thumbs/kol-1-thumb.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
+              li(data-src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a41_a2c42044_orig.jpg', data-sub-html='<p></p>')
+                a(href='')
+                  img.img-responsive(src='images/thumbs/kol-2-thumb.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
+              li(data-src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a42_7df866c8_orig.jpg', data-sub-html='<p></p>')
+                a(href='')
+                  img.img-responsive(src='images/thumbs/kol-3-thumb.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
+              li(data-src='images/thumbs/kol-4.jpg', data-sub-html='<p>при оренді колиби - безкоштовно столик з мангалом</p>')
+                a(href='')
+                  img.img-responsive(src='https://img-fotki.yandex.ru/get/94372/179541099.0/0_142a43_fe87ef89_orig.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
+              li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a45_d7c90b52_orig.jpg', data-sub-html='<p></p>')
+                a(href='')
+                  img.img-responsive(src='images/thumbs/kol-6-thumb.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
+              li(data-src='https://img-fotki.yandex.ru/get/29984/179541099.0/0_142a47_85782a26_orig.jpg', data-sub-html='<p></p>')
+                a(href='')
+                  img.img-responsive(src='images/thumbs/kol-8-thumb.jpg')
+                  .demo-gallery-poster
+                    img(src='images/zoom.png')
 
     include ./partials/footer.jade

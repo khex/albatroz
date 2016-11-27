@@ -29,4 +29,7 @@ gulp.task('jade', function() {
         .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['less', 'jade']);
+// old
+//  gulp.task('default', ['less', 'jade']);
+
+gulp.task('default', ['jade']);
