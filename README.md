@@ -1,25 +1,30 @@
 # albatroz.lviv.ua
 
-#### Tasks Manager - Gulp
-#### CSS preprocessor - LESS
-#### Template Engine - JADE
-#### Front-end Framework - Bootstrap
+##  Tasks Manager - Gulp
+##  CSS preprocessor - LESS
+##  Template Engine - JADE
+##  FrontFramework - Bootstrap
 
-Task list
-==================
+##  Tasks
   - [ ] add 'alt' to all images
-  - [ ] all text to 'відпочинковий комплекс'
+  - [ ] all text to 'База Відпочинку'
   - [ ] delete unused CSS styles
   - [ ] show mini gmap @ index
   - [ ] prises > footer
-  - [x] add Google Analytics
-  - [x] add Google Web Master Console
-  - [x] change style to "Bootstrap 3"
-  - [x] create price tables
-  - [x] страница Готель
-  - [x] страница Колиби
-  - [x] страница Кафе
-  - [x] страница Столики
+
+##  pr-cy.ru
+  - [ ] Напишите для каждой страницы description длиною от 70 до 160 символов
+  - [ ] Заголовок H1 не обнаружен.
+  - [ ] Заголовки H1: 0 H2: 1 H3: 7 H4: 0 H5: 0 H6: 0
+  - [ ] Тошнота: 2.83 — увеличьте показатель хотя бы до 3% (n 4-6%)
+  - [ ] Микроразметка Open Graph: не найдена.
+  - [ ] http://validator.w3.org/check?uri=http://albatroz.lviv.ua 33 errors
+  - [ ] Кеш браузера не используется
+  - [ ] Сжатие изображений
+  - [ ] JS, CSS в верхней части
+
+
+
 
 Готель
 ========
