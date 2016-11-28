@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /javascript/
 Disallow: /partials/
 Host: albatroz.lviv.ua
+sitemap: http://albatroz.lviv.ua/sitemap.xml
