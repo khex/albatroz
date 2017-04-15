@@ -1,0 +1,8 @@
+
+.icon-location:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-calendar-empty:before { content: '\f133'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-cab:before { content: '\f1b9'; } /* '' */
+.icon-bus:before { content: '\f207'; } /* '' */
