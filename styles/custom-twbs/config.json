@@ -390,11 +390,12 @@
     "navs.less",
     "navbar.less",
     "jumbotron.less",
+    "thumbnails.less",
     "media.less",
     "list-group.less",
     "responsive-embed.less",
     "component-animations.less"
   ],
   "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=1929af8320d0b207d1592ed11e82ce55"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=680b20ea341f00f65aef301dcbcf42ac"
 }
