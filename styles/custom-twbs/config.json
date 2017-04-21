@@ -163,10 +163,10 @@
     "@navbar-default-toggle-icon-bar-bg": "#888",
     "@navbar-default-toggle-border-color": "#ddd",
     "@navbar-inverse-color": "lighten(@gray-light, 15%)",
-    "@navbar-inverse-bg": "#222",
+    "@navbar-inverse-bg": "#4984d4",
     "@navbar-inverse-border": "darken(@navbar-inverse-bg, 10%)",
     "@navbar-inverse-link-color": "lighten(@gray-light, 15%)",
-    "@navbar-inverse-link-hover-color": "#fff",
+    "@navbar-inverse-link-hover-color": "#ffffff",
     "@navbar-inverse-link-hover-bg": "transparent",
     "@navbar-inverse-link-active-color": "@navbar-inverse-link-hover-color",
     "@navbar-inverse-link-active-bg": "darken(@navbar-inverse-bg, 10%)",
@@ -375,7 +375,7 @@
     "@headings-small-color": "@gray-light",
     "@blockquote-small-color": "@gray-light",
     "@blockquote-font-size": "(@font-size-base * 1.25)",
-    "@blockquote-border-color": "@gray-lighter",
+    "@blockquote-border-color": "#4984d4",
     "@page-header-border-color": "@gray-lighter",
     "@dl-horizontal-offset": "@component-offset-horizontal",
     "@dl-horizontal-breakpoint": "@grid-float-breakpoint",
@@ -390,11 +390,11 @@
     "navs.less",
     "navbar.less",
     "jumbotron.less",
-    "thumbnails.less",
     "media.less",
     "list-group.less",
-    "responsive-embed.less"
+    "responsive-embed.less",
+    "component-animations.less"
   ],
   "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=c53ba6030010b806d44e7e323bb561f0"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=1929af8320d0b207d1592ed11e82ce55"
 }
