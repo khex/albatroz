@@ -12,18 +12,20 @@
   - [ ] create index.amp.html
   - [x] schema.org > LD+JSON
   - [x] add vk.com/albatroz.lviv
-  - [ ] rewrite text on main page 
+  - [x] rewrite text on main page 
 
 ##  Tasks
- - [ ] add 'alt' to all images
- - [ ] all text to 'База Відпочинку'
- - [ ] delete unused CSS styles
- - [ ] show mini gmap @ index
- - [ ] prises > footer
+  - [x] add 'alt' to all images
+  - [ ] all text to 'База Відпочинку'
+  - [ ] delete unused CSS styles
 
 ##  pr-cy.ru
   - [ ] Тошнота: 2.83 — увеличить до 3х слов 'База відпочинку'
 
 ## Google  PageSpeed Tools
-  - 15.04.17 - 84/94
   - 21.04.17 - 91/99
+
+## Cards
+  - [ ] Custom wtbs > remove tables, jumbotron
+  - [ ] Draw background image with albatros-light colour
+  - [ ] Add miniGmap.js
