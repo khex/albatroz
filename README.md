@@ -15,6 +15,7 @@
   - [x] rewrite text on main page 
 
 ##  Tasks
+  - [ ] rename 'Столики' to 'Альтанки'
   - [x] add 'alt' to all images
   - [ ] all text to 'База Відпочинку'
   - [ ] delete unused CSS styles
