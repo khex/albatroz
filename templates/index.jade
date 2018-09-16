@@ -5,87 +5,85 @@ html(lang='uk')
   body
     include ./partials/navbar.jade
     div.container
+      
       //  contacts section
-      div.row#slider
+      div.row.baza
         div.col-md-12
-          img.img-responsive(src="images/slide-one.jpg" alt="Main Logo")
+          img.img-responsive(alt='База відпочинку Альбатрос неподалік Львова у селі Воля-Гомулецька', src='https://image.ibb.co/i38bY5/slide_one.jpg')      
+          h1.header-one База відпочинку Альбатрос
 
       //  service section
-      div.row#service
-
+      div#service.row
         div.col-md-12
-          div .metadata(hidden)
-            div(itemscope, itemtype="http://schema.org/LocalBusiness")
-              span(itemprop="name") Альбатрос
-              span(itemprop="alternateName") База Альбатрос   
-              span(itemprop="description") база відпочинку у селі Воля-Гомулецька
-              span(itemprop="priceRange") $$
-              span(itemprop="telephone") (097) 457-27-91
-              span(itemprop="url") http://albatroz.lviv.ua
-              span(itemprop="openingHours", content="Mo, Tu, We, Th, Fr, Sa, Su 08:00-23:00") Понеділок - Неділя: з 8:00 до 23:00
-              div(itemscope, itemprop="address", itemtype="http://schema.org/PostalAddress")
-                span(itemprop="addressCountry") UA
-                span(itemprop="addressRegion") Львівська обл.
-                span(itemprop="addressLocality") с. Воля-Гомулецька
-                span(itemprop="streetAddress") вул. Озерна 6
-              div(itemscope, itemprop="geo", itemtype="http://schema.org/GeoCoordinates")
-                meta(itemprop="latitude", content="49.925427")
-                meta(itemprop="longitude", content="23.996117")
-          
           blockquote.blockquote
-            p Втомились від шаленного ритму великого міста та щоденної рутини, скучили за свіжим повітрям та мальовничою природою? Тоді ми запрошуємо Вас у відпочинковий комплекс "Альбатрос", що розташований на березі озера, в кількох кілометрах від Брюхович, у селі Воля-Гомулецька. Величезне озеро та неповторний немов запрошують Вас прогулятись по берегу, відпочити за затишними столиками чи погодувати лебедів. Стоянка, кафе з українською кухнею, готель чи окремі колиби, привітний персонал створюють умови для повноцінного відпочинку Вас та вашої компанії.
+            p Втомились від шаленного ритму великого міста та щоденної рутини, скучили за свіжим повітрям та мальовничою природою - тоді ми запрошуємо Вас відвідати базу-відпочинку "Альбатрос". Ми розташовані неподалік від Львова, в кількох кілометрах від смт Брюховичі, у селі Воля-Гомулецька. Мальовниче озеро та неповторний краєвид немов запрошують Вас прогулятись по берегу, відпочити за затишними столиками чи погодувати лебедів. Стоянка, кафе з українською кухнею, готель чи окремі колиби, привітний персонал створять умови для повноцінного відпочинку Вас та вашої компанії.
 
       // about section
-      div.row.about.text-center#about
+      div#about.row.about.text-center
 
         div.col-md-4.col-sm-6
-          div.thumbnail
-            img.img-rounded(src='images/about-hotel.jpg', alt='готель на базі відпочинку Альбатрос у с. Воля Гомулецька')
-            div.caption
-              h3 Готель
-              p На території комплексу розташований готель з девятьма затишними 2-х місними номерами. 
+          h2.header-two Готель
+          img.img-rounded(alt='готель на базі відпочинку Альбатрос неподалік Львова у селі Воля-Гомулецька', src='https://image.ibb.co/gBMft5/about-hotel.jpg')
+          div.caption
+            p На території комплексу розташований готель з девятьма затишними 2-х місними номерами.
 
         div.col-md-4.col-sm-6
-          div.thumbnail
-            img.img-rounded(src='images/about-kafe.jpg', alt='кафе на базі відпочинку Альбатрос у с. Воля Гомулецька')
-            div.caption
-              h3 Кафе-Крамничка
-              p Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви української кухні.
-
+          h2.header-two Кафе-Крамничка
+          img.img-rounded(alt='кафе на базі відпочинку Альбатрос неподалік Львова у селі Воля-Гомулецька', src='http://image.ibb.co/kfzm0k/about_kafe_min.jpg')
+          div.caption
+            p Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви української кухні.
+    
         div.col-md-4.col-sm-6
-          div.thumbnail
-            img.img-rounded(src='images/about-stolyk.jpg', alt='столики беседки на базі відпочинку Альбатрос у с. Воля Гомулецька')
-            div.caption
-              h3 Столики
-              p З мангалом та дашком, щоб яскраве сонце чи дощ не зупсували відпочинок Вам та вашій компанії.
+          h2.header-two Столики
+          img.img-rounded(alt='столики беседки на базі відпочинку неподалік Львова у селі Воля-Гомулецька', src='http://image.ibb.co/gRvFt5/about_stolyk_min.jpg')
+          div.caption
+            p З мангалом та дашком, щоб яскраве сонце чи дощ не зупсували відпочинок Вам та вашій компанії.
 
- 
       //  prices section 
       section#prices.text-center
-        h2 ЦІНИ
-        .row 
-          .col-md-4.col-sm-6
-            ul.list-group
-              li.list-group-item.active
-                h3.list-group-item-heading Вхід
-              li.list-group-item Доросді <b>20</b> грн.
-              li.list-group-item Діти безкоштовно.
-              li.list-group-item Стоянка <b>30</b> грн.
 
+        div.row
+          div.col-md-4.col-sm-6
+            h2.header-two Вхід
+            table.table
+              tbody
+                tr
+                  td Доросді
+                  td 30 грн.
+                tr
+                  td Діти
+                  td безкоштовно
+                tr
+                  td Стоянка
+                  td 20 грн.
+
+          div.col-md-4.col-sm-6
+            h2.header-two Проживання
+            table.table
+              tbody
+                tr
+                  td Готель
+                  td 2х місни
+                  td 350 грн.
+                tr
+                  td Колиба
+                  td 4 ліжка
+                  td 400 грн.
           .col-md-4.col-sm-6
-            ul.list-group
-              li.list-group-item.active
-                h3.list-group-item-heading Проживання
-              li.list-group-item Готель 2х місний <b>300</b> грн.
-              li.list-group-item Колиба 4 ліжка <b>270</b> грн.
-     
-          .col-md-4.col-sm-6
-            ul.list-group
-              li.list-group-item.active
-                h3.list-group-item-heading Столики
-              li.list-group-item На 10 чоловік <b>150</b> грн.
-              li.list-group-item На 20 чоловік <b>150</b> грн.
-              li.list-group-item На 30 чоловік <b>150</b> грн.
-              li.list-group-item Одна в'язка дров <b>30</b> грн.
-             
+            h2.header-two Столики
+            table.table
+              tbody
+                tr
+                  td На 10 чоловік
+                  td <b>300</b> грн.
+                tr
+                  td На 20 чоловік
+                  td <b>300</b> грн.
+                tr
+                  td На 30 чоловік
+                  td <b>300</b> грн.
+                tr
+                  td В'язанка дров
+                  td <b>50</b> грн.
+                    
     include ./partials/footer.jade

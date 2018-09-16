@@ -1,8 +1,28 @@
+.mapouter {
+    text-align: right;
+    height: 250px;
+    width: 450px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 250px;
+    width: 450px;
+}
+
+body {
+    font-size: 18px;
+}
+
 .navbar-inverse .navbar-nav > li > a {
+    background-color: #4984d4;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > a.active{
+    color: #ffca00;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     color: #ffca00;
@@ -10,12 +30,132 @@
 .navbar-inverse .navbar-nav > li > a.active{
     color: #ffca00;
 }
+
+.baza {
+    margin-top: 50px;
+}
+.blockquote {
+    border-left-color: #4984d4;
+}
+.header-one {
+    color: #ffffff;
+    margin-top: -60px;
+    margin-left: 20px;
+}
+.header-two {
+    color: #4984d4;
+    text-align: center;
+}
+
+.info-detail {
+    color: #ffffff;
+    font-size: 16px;
+}
+.info-detail > ul > li {
+    list-style: outside none none;
+    line-height: 1.75;
+}
+.info-detail > ul > li > i {
+    font-size: 16px; height: 30px;
+    padding-right: 12px;
+    width: 25px;
+}
+.info-img {
+    margin-top: 75px;
+}
+
+.table {
+    font-size: 18px;
+}
+
+/*  CARDS  http://bootsnipp.com  */
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    width: 350px;
+    padding-top: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4984d4;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+.card.hovercard img {
+    width: 350px;
+    height: 250px;
+}
+.card.hovercard .avatar {
+    position: relative;
+    top: -40px;
+    margin-bottom: -60px;
+}
+.card.hovercard .avatar img {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
 #slider {
     margin-top: 50px;
 }
-.blockquote > p {
-    color: #4984d4;
-}
+
 #service {
     margin-top: 20px;
 }
@@ -33,27 +173,6 @@
     padding-bottom: 12px;
 
 }
-
-.info-detail {
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.info-detail > ul > li {
-    list-style: outside none none;
-    line-height: 1.75;
-}
-
-.info-detail > ul > li > i {
-    font-size: 16px;
-    height: 30px;
-    padding-right: 12px;
-    width: 25px;
-}
-
-.info-img {
-    margin-top: 25px;
-};
 
 .demo-gallery>ul{margin-bottom:0;padding-left:0}
 .demo-gallery>ul>h2{font-size:50px;color:#6c9de1;margin-top:30px}
