@@ -5,6 +5,10 @@
 ##  Template Engine - JADE
 ##  FrontFramework - Bootstrap
 
+## Compile
+  - run gulf
+  - delete <!--  lightgallery--> in index.html
+ 
 ## Todo
   Create AMP pages
   https://www.ampproject.org/docs/guides/debug/validate

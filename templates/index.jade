@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 html(lang='uk')
-  include ./partials/head.jade
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title «Альбатрос» - база відпочинку у селі Воля-Гомулецька
+  meta(name='description', content='База відпочинку «Альбатрос» щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.')
+  link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+  // Open Graph Tags
+  meta(property='og:title', content='База відпочинку «Альбатрос»')
+  meta(property='og:description', content='Щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.')
+  meta(property='og:site_name', content='Albatroz.lviv.ua')
+  meta(property='og:url', content='http://albatroz.lviv.ua')
+  meta(property='og:image', content='http://albatroz.lviv.ua/images/slide-one.jpg')
+  meta(property='og:type', content='place')
+  meta(property='og:locale', content='uk_UA')
+  // Tweeter Card Tags
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:title', content='База відпочинку «Альбатрос»')
+  meta(name='twitter:description', content='Щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.')
+  meta(name='twitter:image', content='http://albatroz.lviv.ua/images/slide-one.jpg')
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "UA",
+    "addressRegion": "Львівська обл., Жовківський р-н",
+    "addressLocality": "село Воля-Гомулецька",
+    "streetAddress": "вул. Озерна 6"
+    },
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "49.925427",
+    "longitude": "23.996117"
+    },
+    "name": "База відпочинку «Альбатрос»",
+    "alternateName": "База «Альбатрос»",
+    "description": "База відпочинку «Альбатрос» щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.",
+    "image": "http://albatroz.lviv.ua/images/amp-main.jpg",
+    "priceRange": "$",
+    "telephone": "(097) 457-27-91",
+    "url": "http://albatroz.lviv.ua",
+    "sameAs": [
+    "https://www.facebook.com/albatroz.lviv",
+    "https://vk.com/albatroz.lviv"
+    ],
+    "openingHours": "Mo-Su 08:00-23:00"
+    }
+  link(rel='stylesheet', type='text/css', href='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(href='styles/custom.css', media='screen', rel='stylesheet', type='text/css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet')
   body
     include ./partials/navbar.jade
     div.container
@@ -21,19 +71,22 @@ html(lang='uk')
       div#about.row.about.text-center
 
         div.col-md-4.col-sm-6
-          h2.header-two Готель
+          h2.header-two
+            a(href='/hotel') Готель
           img.img-rounded(alt='готель на базі відпочинку Альбатрос неподалік Львова у селі Воля-Гомулецька', src='https://image.ibb.co/gBMft5/about-hotel.jpg')
           div.caption
             p На території комплексу розташований готель з девятьма затишними 2-х місними номерами.
 
         div.col-md-4.col-sm-6
-          h2.header-two Кафе-Крамничка
+          h2.header-two
+            a(href='//kafe') Кафе-Крамничка
           img.img-rounded(alt='кафе на базі відпочинку Альбатрос неподалік Львова у селі Воля-Гомулецька', src='http://image.ibb.co/kfzm0k/about_kafe_min.jpg')
           div.caption
             p Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви української кухні.
     
         div.col-md-4.col-sm-6
-          h2.header-two Столики
+          h2.header-two
+            a(href='/stolyky') Столики
           img.img-rounded(alt='столики беседки на базі відпочинку неподалік Львова у селі Воля-Гомулецька', src='http://image.ibb.co/gRvFt5/about_stolyk_min.jpg')
           div.caption
             p З мангалом та дашком, щоб яскраве сонце чи дощ не зупсували відпочинок Вам та вашій компанії.

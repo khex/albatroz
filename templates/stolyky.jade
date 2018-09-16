@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 html(lang='uk')
-  include ./partials/head.jade
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Столики на базі відпочинку «Альбатрос» у селі Воля-Гомулецька
+  meta(name='description', content='База відпочинку «Альбатрос» щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.')
+  link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+  // Open Graph Tags
+  meta(property='og:title', content='Столики на базі відпочинку «Альбатрос»')
+  meta(property='og:description', content='Загалом на нашій базі розташовано 24 столика на 10, 20 та 30 чоловік.')
+  meta(property='og:site_name', content='Albatroz.lviv.ua')
+  meta(property='og:url', content='http://albatroz.lviv.ua')
+  meta(property='og:image', content='http://albatroz.lviv.ua/images/slide-one.jpg')
+  meta(property='og:type', content='place')
+  meta(property='og:locale', content='uk_UA')
+  // Tweeter Card Tags
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:title', content='Столики на базі відпочинку «Альбатрос»')
+  meta(name='twitter:description', content='Загалом на нашій базі розташовано 24 столика на 10, 20 та 30 чоловік.')
+  meta(name='twitter:image', content='http://albatroz.lviv.ua/images/slide-one.jpg')
+  // Links
+  link(rel='stylesheet', type='text/css', href='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(href='styles/custom.css', media='screen', rel='stylesheet', type='text/css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css' rel='stylesheet')
   body
     include ./partials/navbar.jade
 
@@ -13,7 +36,7 @@ html(lang='uk')
         div.col-md-5
           h2 Столики
           blockquote.blockquote
-            p Загалом на нашій базі знаходиться 24 столика на 10, 20 та 30 чоловік. Всі вони мають дашок, котрий захиститьВас та вашу компанію від палючого сонця вдень та від дощу у непогоду, та мангал. Обирайте самі місце відпочинку - у затінку на берегу озера чи на відкритій сонячній галявні. 
+            p Загалом на нашій базі розташовано 24 столика на 10, 20 та 30 чоловік. Всі вони мають дашок, котрий захиститьВас та вашу компанію від палючого сонця вдень та від дощу у непогоду, та мангал. Обирайте самі місце відпочинку - у затінку на берегу озера чи на відкритій сонячній галявні. 
             p Вартість будь-якого столика - <b>300</b> грн.
             p Вартість в'язки дров - <b>50</b> грн.
 
