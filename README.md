@@ -10,7 +10,10 @@
   - delete <!--  lightgallery--> in index.html
  
 ## Todo
-  Create AMP pages
-  https://www.ampproject.org/docs/guides/debug/validate
-  https://search.google.com/search-console/amp
-  https://developers.google.com/search/docs/guides/use-AMP-HTML
+  [-] Page 'banja' and rewrite nav links.
+  [-] Delete project to reset all commits on server.
+  [-] Rewrite to Angular 7 PWA.
+  [-] Add AMP pages.
+    - www.ampproject.org/docs/guides/debug/validate
+    - search.google.com/search-console/amp
+    - developers.google.com/search/docs/guides/use-AMP-HTML
