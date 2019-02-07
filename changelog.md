@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 `mc??` stands for commits in master branch.
 [Added, Changed, Deprecated, Removed, Fixed, Security]
 
-## [mc5] - 2017-06-20
+## [mc5] - 07-02-2019
 ### Added
 - Angular 7 app init.
+
+## [mc6] - 07-02-2019
+### Added
+- Styling: @angular/material, @angular/cdk and normalize.css
+- Basic Material Toolbar
