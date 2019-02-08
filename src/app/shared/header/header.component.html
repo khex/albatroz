@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-sidenav-container>
+  <mat-toolbar color="primary">
+    <!-- Left Side -->
+    <div fxHide.gt-md>
+      <button mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <a routerLink="/home">Альбатрос</a>
+    </div>
+    <!-- Right Side 
+    https://github.com/angular/flex-layout/wiki/Responsive-API
+    -->
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-sm>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <li>(097) 457 27 91</li>
+      </ul>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.lt-md>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <li><a routerLink="/hotel">Готель</a></li>
+        <li><a routerLink="/kolyby">Колиби</a></li>
+        <li><a routerLink="/altanky">Альтанки</a></li>
+        <li><a routerLink="/lasnia">Лазня</a></li>
+        <li><a routerLink="/kafe">Кафе</a></li>
+        <li><a routerLink="/prices">Ціни</a></li>
+        <li><a routerLink="/contacts">Контакти</a></li>
+      </ul>
+    </div>
+  </mat-toolbar>
+</mat-sidenav-container>

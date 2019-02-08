@@ -15,11 +15,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `added` "@angular/material", "@angular/cdk" and "normalize.css"
   - `added` Basic Material Toolbar.
 
-### [mc7] - 07-02-2019
+### [mc7] - 07-02-2019 17:42
   - `added` Images from from `gh-pages` branch to `src`.
   - `added` Meta SEO files `gh-pages` branch to `src`.
   - `chngd` Build folder from `dist/albatroz` to `dist`.
 
-### [mc8] - 07-02-2019
+### [mc8] - 08-02-2019 00:23
   - `added` "@angular/flex-layout"
   - `added` Flexible menu toolbar.
+
+### [mc9] - 08-02-2019
+  - `added` SharedModule with `header` and `footer` layouts.
+  - `chngd` Navbar loading throug header component.
+  - `chngd` Prebuild theme to `indigo-pink`.
+  - `fixed` Menu icon by importing Material Icons Font.

@@ -1,6 +1,8 @@
 # Albatroz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+## Links
+ - code-maze.com/angular-material-navigation/
+ - medium.com/@michelestieven/organizing-angular-applications-f0510761d65a
 
 ## Build
 

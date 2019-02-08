@@ -1,28 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-sidenav-container>
-  <mat-toolbar color="primary">
-    <!-- Left Side -->
-    <div fxHide.gt-sm>
-      <button mat-icon-button (click)="onToggleSidenav()">
-        <mat-icon>home</mat-icon>
-      </button>
-    </div>
-    <div>
-      <a routerLink="/home">Альбатрос</a>
-    </div>
-    <!-- Right Side -->
-    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-        <li><a routerLink="/owner">Готель</a></li>
-        <li><a routerLink="/account">Колиби</a></li>
-        <li><a routerLink="/owner">Кафе</a></li>
-        <li><a routerLink="/account">Альтанки</a></li>
-        <li><a routerLink="/account">Лазняи</a></li>
-        <li><a routerLink="/owner">Ціни</a></li>
-        <li><a routerLink="/account">Контакти</a></li>
-      </ul>
-    </div>
-  </mat-toolbar>
-</mat-sidenav-container>
-
+<layout-header></layout-header>
 <router-outlet></router-outlet>
+<layout-footer></layout-footer>

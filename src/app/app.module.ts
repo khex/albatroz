@@ -4,12 +4,13 @@ import { NgModule }         from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent }     from './app.component';
 
-import { MatToolbarModule,
-         MatMenuModule,
-         MatIconModule,
-         MatButtonModule,
-         MatSidenavModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
+/* Angular Material */
+//import { MatToolbarModule, MatMenuModule, MatIconModule,
+//         MatButtonModule, MatSidenavModule } from '@angular/material';
+//import { FlexLayoutModule } from '@angular/flex-layout';
+
+/* Custome Modules */
+import { SharedModule }     from './shared/shared.module'
 
 @NgModule({
   declarations: [
@@ -18,12 +19,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatMenuModule,
-    MatSidenavModule,
-    FlexLayoutModule
+  //MatToolbarModule,
+  //MatButtonModule,
+  //MatIconModule,
+  //MatMenuModule,
+  //MatSidenavModule,
+  //FlexLayoutModule,
+    SharedModule
   ],
   providers: [],
   exports: [],
