@@ -1,13 +1,13 @@
-import { Component }       from '@angular/core';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  template: `<router-outlet></router-outlet>`
 })
+export class AppComponent implements OnInit {
 
-export class AppComponent {
-  title = 'База Альбатрос';
+  constructor( ) { }
+
+  ngOnInit() { }
+  
 }

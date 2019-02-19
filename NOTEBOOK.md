@@ -30,6 +30,10 @@ APP-+--AppModule
     |  |--User
     |
     |--ShareModule
-       |--Components
-       |--Pipes
-       |--Directives
+        |--Components
+        |--Pipes
+        |--Directives
+
+https://github.com/angular/flex-layout/wiki/Responsive-API
+
+https://blog.angularindepth.com/angular-flex-layout-flexbox-and-grid-layout-for-angular-component-6e7c24457b63

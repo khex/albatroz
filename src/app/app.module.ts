@@ -1,34 +1,22 @@
-import { BrowserModule }    from '@angular/platform-browser';
-import { NgModule }         from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent }     from './app.component';
-
-/* Angular Material */
-//import { MatToolbarModule, MatMenuModule, MatIconModule,
-//         MatButtonModule, MatSidenavModule } from '@angular/material';
-//import { FlexLayoutModule } from '@angular/flex-layout';
-
-/* Custome Modules */
-import { SharedModule }     from './shared/shared.module'
+import { NgModule }          from '@angular/core';
+import { RouterModule }      from '@angular/router';
+import { BrowserModule }     from '@angular/platform-browser';
+import { Http, HttpModule }  from '@angular/http';
+import { SharedModule }      from './shared/shared.module';
+import { rootRouterConfig }  from './app.routes';
+import { AppComponent }      from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-  //MatToolbarModule,
-  //MatButtonModule,
-  //MatIconModule,
-  //MatMenuModule,
-  //MatSidenavModule,
-  //FlexLayoutModule,
-    SharedModule
+    BrowserAnimationsModule,
+    HttpModule,
+    SharedModule,
+    RouterModule.forRoot(rootRouterConfig, { useHash: false })
   ],
+  declarations: [AppComponent],
   providers: [],
-  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

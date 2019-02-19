@@ -1,23 +1,66 @@
-import { NgModule }        from '@angular/core';
-import { CommonModule }    from '@angular/common';
+import { NgModule }          from '@angular/core';
+import { CommonModule }      from '@angular/common';
+import { FormsModule }       from "@angular/forms";
+import { RouterModule }      from "@angular/router";
+import { FlexLayoutModule }  from '@angular/flex-layout';
+import {
+  MatSidenavModule,
+  MatListModule,
+  MatTooltipModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatMenuModule,
+  MatSnackBarModule,
+  MatGridListModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatRadioModule,
+  MatCheckboxModule,
+  MatCardModule,
+  MatProgressSpinnerModule,
+  MatRippleModule,
+  MatDialogModule }          from '@angular/material';
 
-import { MatToolbarModule, MatMenuModule, MatIconModule,
-         MatButtonModule, MatSidenavModule } from '@angular/material';
-import { FlexLayoutModule} from '@angular/flex-layout';
-import { FooterComponent } from '../shared/footer/footer.component';
-import { HeaderComponent } from '../shared/header/header.component';
+import { AppLoaderComponent} from './services/app-loader/app-loader.component';
+
+// DIRECTIVES
+import { FontSizeDirective } from './directives/font-size.directive';
+import { ScrollToDirective } from './directives/scroll-to.directive';
+
+// SERVICES
+import { AuthGuard }         from './services/auth/auth.guard';
+import { AppLoaderService }  from './services/app-loader/app-loader.service';
+import { LandingFixService } from '../shared/services/landing-fix.service';
+
+const classesToInclude = [
+  AppLoaderComponent,
+  FontSizeDirective,
+  ScrollToDirective
+]
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    RouterModule,
     FlexLayoutModule,
-    MatToolbarModule,
     MatMenuModule,
+    MatSnackBarModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatRippleModule,
+    MatDialogModule
   ],
-  exports: [FooterComponent, HeaderComponent]
+  entryComponents: [AppLoaderComponent],
+  providers: [
+    AuthGuard,
+    AppLoaderService,
+    LandingFixService
+  ],
+  declarations: classesToInclude,
+  exports: classesToInclude
 })
 export class SharedModule { }
