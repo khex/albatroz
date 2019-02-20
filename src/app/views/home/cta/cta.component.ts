@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cta.component.scss']
 })
 export class CtaComponent implements OnInit {
-
+  
+  link = 'https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805';
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
   
   buyEgret() {
-    window.open('https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805?ref=mh_rafi');
+    window.open(this.link);
   }
 }

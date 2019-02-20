@@ -30,9 +30,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `chngd` Prebuild theme to `indigo-pink`.
   - `fixed` Menu icon by importing Material Icons Font.
 
-### [mc10] - 19-02-2019 
+### [mc10] - 19-02-2019 ??:?? 
   - `added` Swith to Material Angular Landing Theme.
   - `added` Main page.
   - `chngd` Update all modules to Angular 7.
   - `chngd` Template engine from SASS to SCSS.
   - `fixed` Opitimase all gallery images size.
+
+### [mc11] - 20-02-2019 ??:??
+  - `added` Something.

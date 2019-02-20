@@ -25,6 +25,8 @@
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "^7.0.4",
     "@ngu/carousel": "1.4.2",
+    "@ngx-gallery/core": "^4.0.2-beta.0",
+    "@ngx-gallery/lightbox": "^4.0.2-beta.0",
     "classlist.js": "1.1.20150312",
     "core-js": "^2.5.4",
     "date-fns": "1.28.5",
