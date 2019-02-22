@@ -23,7 +23,6 @@ export class ContactComponent implements OnInit{
               private homeTwoService: HomeTwoService) {
     //  annotate
     this.subscription = homeTwoService.textGetter.subscribe(pageData => {
-          console.info('contacts', pageData);
           //  annotate
           this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(pageData['html']);
           //  anotate

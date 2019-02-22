@@ -19,7 +19,7 @@ ng build --prod --base-href "/albatroz/" --deployUrl="/albatroz/"
   Link for code sourses <script src="/albatroz/main.e09a...4b74.js"></script>
 
 ### --deleteOutputPath
-  перезаписівает существующие файлі и не трогает остальные, как папки с картинками
+  перезаписывает существующие файлы и не трогает остальные, как папки с картинками
 
 ```
 npx ngh dir=dist/
@@ -27,7 +27,9 @@ npx ngh dir=dist/
 
 
 ## Development server
-
+```
+ng serve dist/
+```
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
