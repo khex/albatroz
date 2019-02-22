@@ -22,7 +22,7 @@ ng build --prod --base-href "/albatroz/" --deployUrl="/albatroz/"
   перезаписывает существующие файлы и не трогает остальные, как папки с картинками
 
 ```
-npx ngh dir=dist/
+npx ngh
 ```
 
 

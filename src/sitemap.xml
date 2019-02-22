@@ -7,31 +7,37 @@
 
 <url>
   <loc>http://albatroz.lviv.ua/</loc>
-  <lastmod>2018-09-27T16:58:07+00:00</lastmod>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://albatroz.lviv.ua/hotel</loc>
-  <lastmod>2018-09-27T16:58:07+00:00</lastmod>
+  <loc>http://albatroz.lviv.ua/uk/hotel</loc>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://albatroz.lviv.ua/kolyby</loc>
-  <lastmod>2018-09-27T16:58:07+00:00</lastmod>
+  <loc>http://albatroz.lviv.ua/uk/kolyby</loc>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://albatroz.lviv.ua/kafe</loc>
-  <lastmod>2018-09-27T16:58:07+00:00</lastmod>
+  <loc>http://albatroz.lviv.ua/uk/kafe</loc>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://albatroz.lviv.ua/stolyky</loc>
-  <lastmod>2018-09-27T16:58:07+00:00</lastmod>
+  <loc>http://albatroz.lviv.ua/uk/altanki</loc>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://albatroz.lviv.ua/uk/sauna</loc>
+  <lastmod>2019-01-27T16:58:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
