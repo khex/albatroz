@@ -1,38 +1,39 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Subscription }      from 'rxjs';
+import { HomeTwoComponent }  from '../home-two.component';
+import { HomeTwoService }    from '../home-two.service';
+import { DomSanitizer, SafeHtml }          from '@angular/platform-browser';
 import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls:  ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
-
-  // https://murhafsousli.github.io/ngx-gallery/#/lightbox
-  data = [
-    { srce: 'medium/mag-1-md.jpg', thmb: 'thumbs/mag-1-thumb.jpg'},
-    { srce: 'medium/mag-2-md.jpg', thmb: 'thumbs/mag-2-thumb.jpg'},
-    { srce: 'medium/mag-3-md.jpg', thmb: 'thumbs/mag-3-thumb.jpg'},
-    { srce: 'medium/mag-4-md.jpg', thmb: 'thumbs/mag-4-thumb.jpg'},
-    { srce: 'medium/mag-5-md.jpg', thmb: 'thumbs/mag-5-thumb.jpg'},
-    { srce: 'medium/mag-6-md.jpg', thmb: 'thumbs/mag-6-thumb.jpg'}
-  ];
-
+export class ContactComponent implements OnInit{ 
+  
   @Input('backgroundGray') public backgroundGray;
   galleryId = 'myLightbox';
+  subscription: Subscription;
+  items: GalleryItem[];
+  safeHtml: SafeHtml;
 
-  // Map the data to gallery image items
-  items: GalleryItem[] = this.data.map(item =>
-    new ImageItem({
-      src:   'assets/images/' + item.srce,
-      thumb: 'assets/images/' + item.thmb })
-  );
-
-  constructor(public gallery: Gallery) { }
-
-  ngOnInit() {
-    // Set gallery items array
-    this.gallery.ref().load(this.items);
+  constructor(public gallery: Gallery,
+              private sanitizer: DomSanitizer,
+              private homeTwoService: HomeTwoService) {
+    //  annotate
+    this.subscription = homeTwoService.textGetter.subscribe(pageData => {
+          console.info('contacts', pageData);
+          //  annotate
+          this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(pageData['html']);
+          //  anotate
+          this.items    = pageData['imgs'].map(item =>
+            new ImageItem({ src: item.src, thumb: item.thumb }));
+          //  anotate
+          this.gallery.ref().load(this.items);
+    });
   }
+
+  ngOnInit() { }
 
 }

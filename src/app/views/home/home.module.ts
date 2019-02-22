@@ -32,8 +32,8 @@ import { CtaComponent }      from './cta/cta.component';
 import { PricingsComponent } from './pricings/pricings.component';
 import { ContactComponent }  from './contact/contact.component';
 import { FooterComponent }   from './footer/footer.component';
-import { DemoComponent }     from './demo/demo.component';
 
+import { HomeTwoService }    from './home-two.service';
 import { WINDOW_PROVIDERS }  from '../../shared/helpers/window.helper';
 
 @NgModule({
@@ -65,10 +65,12 @@ import { WINDOW_PROVIDERS }  from '../../shared/helpers/window.helper';
     CtaComponent, 
     PricingsComponent, 
     ContactComponent, 
-    FooterComponent,
-    DemoComponent
+    FooterComponent
   ],
-  providers: [WINDOW_PROVIDERS]
+  providers: [
+    HomeTwoService,
+    WINDOW_PROVIDERS
+  ]
 
 })
 export class HomeModule { }

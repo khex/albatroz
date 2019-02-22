@@ -1,18 +1,20 @@
-import { Routes } from '@angular/router';
+import { Routes }            from '@angular/router';
 
 export const rootRouterConfig: Routes = [
+
   { 
     path: '', 
-    redirectTo: 'home/demos', 
+    redirectTo: 'uk/home', 
     pathMatch: 'full' 
   },
   { 
-    path: 'home', 
+    path: 'uk', 
     loadChildren: './views/home/home.module#HomeModule'
   },
   { 
     path: '**', 
-    redirectTo: 'home/one'
+    redirectTo: 'uk/home'
   }
+
 ];
 
