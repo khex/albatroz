@@ -112,6 +112,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 @ngu/carousel
 MIT
 MIT License
