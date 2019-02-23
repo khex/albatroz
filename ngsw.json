@@ -7,12 +7,12 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/4.faf21ad8424f0a893c52.js",
+        "/4.3384d3941317b9b63864.js",
         "/favicon.ico",
         "/index.html",
-        "/main.76740fbc7925b741a831.js",
+        "/main.2c77f9e4f4bf648bb6bd.js",
         "/polyfills.4c7e6ab0eb83cb419d7d.js",
-        "/runtime.3957992cdea0225bae37.js",
+        "/runtime.77ec69db241918b3fd93.js",
         "/styles.284eada6a0385f16994a.css"
       ],
       "patterns": []
@@ -132,6 +132,7 @@
         "/assets/images/thumbs/tab-7-thumb.jpg",
         "/assets/images/thumbs/tab-8-thumb.jpg",
         "/assets/images/zoom.png",
+        "/assets/manifest.json",
         "/assets/styles/app.scss",
         "/assets/styles/scss/_main.scss",
         "/assets/styles/scss/_themes.scss",
@@ -148,7 +149,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/4.faf21ad8424f0a893c52.js": "99bf3db09a198b7b51a1e45c19cba914b3a8e645",
+    "/4.3384d3941317b9b63864.js": "9d498e118ae1704d5ec26c8c1d1150f456624f1d",
     "/assets/angular-landing.css": "8210b1ac8dba6dbe5105cff57b5854e59f8ce5b1",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -259,6 +260,7 @@
     "/assets/images/thumbs/tab-7-thumb.jpg": "cf73f638594a30f0961cfd8376128be69cc36eb0",
     "/assets/images/thumbs/tab-8-thumb.jpg": "dfc4b702094a819f658d60a55ba3ecf9304653d0",
     "/assets/images/zoom.png": "7391c612e67c1594745231ba2acdccbcf51b58f2",
+    "/assets/manifest.json": "e2eb8f24ef1fcd653bae4a000f99f9339d8f72c4",
     "/assets/styles/app.scss": "87776e2a00a3371434c0f9e6cac442a99f765951",
     "/assets/styles/scss/_main.scss": "b47cfe39946629795a94348d05e87d73ede0f6ae",
     "/assets/styles/scss/_themes.scss": "ba64c946085dfa4ecdf4ed59477f05fcfde9ad3a",
@@ -270,10 +272,10 @@
     "/assets/styles/scss/views/_landing.scss": "3bbc50b70470a733e5686712826c2ffdae598ca6",
     "/assets/styles/styles.css": "8210b1ac8dba6dbe5105cff57b5854e59f8ce5b1",
     "/favicon.ico": "a883af488e4213f36a46175ac66d484e15dd0783",
-    "/index.html": "5324cf826def511852260aa71ed389d1155a87fd",
-    "/main.76740fbc7925b741a831.js": "2844d7461aa7ac7227cef857692db5d012658b78",
+    "/index.html": "f8ec8a7353e436b5dac9b2ce2f43448c6341d930",
+    "/main.2c77f9e4f4bf648bb6bd.js": "8558486acac6d2ea9cc54f0eeb4dcd11fddc9442",
     "/polyfills.4c7e6ab0eb83cb419d7d.js": "6218c2e77534460afb980874f3a8493598257c86",
-    "/runtime.3957992cdea0225bae37.js": "f467fa5eb9d79f28657fb4118dd3bbbb61924807",
+    "/runtime.77ec69db241918b3fd93.js": "d2a2ff28899825273f01955c05967d1735bf0a82",
     "/styles.284eada6a0385f16994a.css": "424d9154bc5ad2305d8ba0bc8f838d35fa916640"
   },
   "navigationUrls": [
