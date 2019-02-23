@@ -1,23 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-
-  <title>SGHPA Demo</title>
-
+  <meta charset="utf-8">
+  <title>«Альбатрос» - база відпочинку у селі Воля-Гомулецька.</title>
+  <base href="https://albatroz.lviv.ua/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
+<link rel="stylesheet" href="styles.284eada6a0385f16994a.css"></head>
+<body class="egret-indigo">
+  <!-- Github Pages hack to allow SPA refresh without receiving 404.
   <script>
-    sessionStorage.redirect = location.href;
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
   </script>
-
-  <meta http-equiv="refresh" content="0;URL='/'"></meta>
-</head>
-
-<body>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</body>
-
-
+  /Github Pages hack. -->
+  <noscript>
+    <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">
+      Sorry, but app is not available without javascript
+    </h3>
+  </noscript>
+  <app-root>
+    <div class="app-loader">
+      <div class="spinner">
+        <div class="double-bounce1 mat-bg-primary"></div>
+        <div class="double-bounce2 mat-bg-accent"></div>
+      </div>
+    </div>
+  </app-root>
+<script type="text/javascript" src="runtime.3957992cdea0225bae37.js"></script><script type="text/javascript" src="polyfills.4c7e6ab0eb83cb419d7d.js"></script><script type="text/javascript" src="main.76740fbc7925b741a831.js"></script></body>
 </html>
