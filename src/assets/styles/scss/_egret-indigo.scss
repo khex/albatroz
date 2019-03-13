@@ -1,3 +1,6 @@
+@import '~@angular/material/_theming';
+@include mat-core();
+
 $mat-primary: (
     50 : #e8eaf6,
     100 : #c5cbe9,
@@ -106,7 +109,7 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
         border-color: map-get($mat-primary, 500) !important;
     }
     .sidebar-panel {
-      /* background: url('../../assets/images/sidebar-bg.jpg') no-repeat; **/
+        background: url('../../assets/images/sidebar-bg.jpg') no-repeat;
     }
     .sidebar-compact ul.submenu,
     .default-bg {
@@ -170,3 +173,6 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
         color: rgba(0, 0, 0, 0.87);
     }
 }
+
+$background: map-get($egret-theme, background);
+$foreground: map-get($egret-theme, foreground);

@@ -22,11 +22,11 @@
               "src/CNAME",
               "src/sitemap.xml",
               "src/robots.txt",
-              "src/manifest.webmanifest",
-              "src/404.html"
+              "src/404.html",
+              "src/.gitignore"
             ],
             "styles": [
-              "src/assets/styles/app.scss"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": []
           },

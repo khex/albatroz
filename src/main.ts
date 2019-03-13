@@ -13,11 +13,17 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-
-platformBrowserDynamic().bootstrapModule(AppModule).then(() => {
-  if ('serviceWorker' in navigator && environment.production) {
-    navigator.serviceWorker.register('/ngsw-worker.js');
-  }
-}).catch(err => console.log(err));
-
 //platformBrowserDynamic().bootstrapModule(AppModule);
+
+platformBrowserDynamic()
+.bootstrapModule(AppModule)
+.then(() => {
+  console.info('Here service is comming');
+  console.log(navigator);
+  navigator.serviceWorker.register('ngsw-worker.js');
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('ngsw-worker.js');
+  }
+})
+.catch(err => console.log(err));
+

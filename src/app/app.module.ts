@@ -7,18 +7,22 @@ import { rootRouterConfig }  from './app.routes';
 import { AppComponent }      from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { environment }       from '../environments/environment';
+import { HomeModule }        from './views/home/home.module';
+import { WelcomeComponent }  from './welcome.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    HomeModule,
     SharedModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: false }),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js')
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, WelcomeComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

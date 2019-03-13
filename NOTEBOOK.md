@@ -1,6 +1,15 @@
 # Some Thots
 medium.com/@michelestieven/organizing-angular-applications-f0510761d65a
 
+```
+A: 192.30.252.153 > 185.199.111.153
+https://help.github.com/en/articles/setting-up-an-apex-domain
+ServiceWorker needs https!
+
+tracert albatroz.lviv.ua
+```
+
+
 ### AppModule
 Самый верхний модуль в иерархии приложения.
 

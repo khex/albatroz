@@ -67,10 +67,20 @@ import { WINDOW_PROVIDERS }  from '../../shared/helpers/window.helper';
     ContactComponent, 
     FooterComponent
   ],
+  exports: [
+    HomeOneComponent,
+    HomeTwoComponent, 
+    HeaderComponent, 
+    IntroOneComponent,
+    PortfolioComponent, 
+    CtaComponent, 
+    PricingsComponent, 
+    ContactComponent, 
+    FooterComponent
+  ],
   providers: [
     HomeTwoService,
     WINDOW_PROVIDERS
   ]
-
 })
 export class HomeModule { }

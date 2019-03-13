@@ -7,25 +7,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Material+Icons" rel="stylesheet">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="assets/manifest.json">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "address":
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "UA",
+        "addressRegion": "Львівська обл., Жовківський р-н",
+        "addressLocality": "село Воля-Гомулецька",
+        "streetAddress": "вул. Озерна 6"
+      },
+      "geo":
+      {
+        "@type": "GeoCoordinates",
+        "latitude": "49.925427",
+        "longitude": "23.996117"
+      },
+      "name": "База відпочинку «Альбатрос»",
+      "alternateName": "База «Альбатрос»",
+      "description": "База відпочинку «Альбатрос» щиро запрошує Вас відпочити серед природи на берегу мальовничого озера.",
+      "image": "http://albatroz.lviv.ua/images/amp-main.jpg",
+      "priceRange": "$",
+      "telephone": "(097) 457-27-91",
+      "url": "http://albatroz.lviv.ua",
+      "sameAs": ["https://www.facebook.com/albatroz.lviv", "https://vk.com/albatroz.lviv"],
+      "openingHours": "Mo-Su 08:00-23:00"
+    }
+  </script>
+  <script>window.innerWidth === window.outerWidth;</script>
   <meta name="theme-color" content="#1976d2">
 </head>
 <body class="egret-indigo">
-  <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
-  <script>
-    (function () {
-      // Retrieve the URL the user was trying to access when receiving the 404.
-      var redirect = sessionStorage.redirect;
-      // Remove the URL from sessionStorage.
-      delete sessionStorage.redirect;
-      // Check if we actually need to redirect.
-      if (redirect && redirect != location.href) {
-        // We need to redirect to the URL the user was trying to access.
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
-  <!-- /Github Pages hack. -->
   <noscript>
     <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">
       Sorry, but app is not available without javascript

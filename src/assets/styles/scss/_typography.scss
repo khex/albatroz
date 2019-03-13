@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6,
+ h1,  h2,  h3,  h4,  h5,  h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: $headings-margin-bottom;
   font-weight: $headings-font-weight;
@@ -20,17 +20,11 @@ a, a:focus, a:hover {
   outline: 0;
 }
 
-button {
-  outline: 0;
-}
+button { outline: 0; }
 
-figure {
-  margin: 0;
-}
+figure { margin: 0; }
 
-strong, b {
-	font-weight: 700;
-}
+strong, b {	font-weight: 700; }
 
 .strikethrough {
   text-decoration: line-through;
