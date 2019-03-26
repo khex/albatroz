@@ -96,8 +96,6 @@ THE SOFTWARE.
 
 @angular/material/dialog
 
-@angular/material/divider
-
 @angular/material/icon
 
 @angular/material/list
