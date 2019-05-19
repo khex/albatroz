@@ -11,29 +11,25 @@ import {
   MatInputModule,
   MatRippleModule,
   MatSlideToggleModule,
-  MatSnackBarModule
- } from '@angular/material';
+  MatSnackBarModule }        from '@angular/material';
 import { FlexLayoutModule }  from '@angular/flex-layout';
 import { NguCarouselModule } from '@ngu/carousel';
 // ngx-gallery
 import { GalleryModule }     from  '@ngx-gallery/core';
 import { LightboxModule }    from  '@ngx-gallery/lightbox';
 
-// import { CommonDirectivesModule } from '../../directives/common/common-directives.module';
 import { SharedModule }      from '../../shared/shared.module';
 import { HomeRoutes }        from "./home.routing";
 
-import { HomeOneComponent }  from './home-one.component';
 import { HomeTwoComponent }  from './home-two.component';
 import { HeaderComponent }   from './header/header.component';
-import { IntroOneComponent } from './intro-one/intro-one.component';
+import { IntroComponent }    from './intro/intro.component';
 import { PortfolioComponent} from './portfolio/portfolio.component';
-import { CtaComponent }      from './cta/cta.component';
 import { PricingsComponent } from './pricings/pricings.component';
 import { ContactComponent }  from './contact/contact.component';
 import { FooterComponent }   from './footer/footer.component';
 
-import { HomeTwoService }    from './home-two.service';
+import { HomeService }       from './home.service';
 import { WINDOW_PROVIDERS }  from '../../shared/helpers/window.helper';
 
 @NgModule({
@@ -57,29 +53,25 @@ import { WINDOW_PROVIDERS }  from '../../shared/helpers/window.helper';
     RouterModule.forChild(HomeRoutes)
   ],
   declarations: [
-    HomeOneComponent,
-    HomeTwoComponent, 
-    HeaderComponent, 
-    IntroOneComponent,
-    PortfolioComponent, 
-    CtaComponent, 
-    PricingsComponent, 
-    ContactComponent, 
+    HomeTwoComponent,
+    HeaderComponent,
+    IntroComponent,
+    PortfolioComponent,
+    PricingsComponent,
+    ContactComponent,
     FooterComponent
   ],
   exports: [
-    HomeOneComponent,
-    HomeTwoComponent, 
-    HeaderComponent, 
-    IntroOneComponent,
-    PortfolioComponent, 
-    CtaComponent, 
-    PricingsComponent, 
-    ContactComponent, 
+    HomeTwoComponent,
+    HeaderComponent,
+    IntroComponent,
+    PortfolioComponent,
+    PricingsComponent,
+    ContactComponent,
     FooterComponent
   ],
   providers: [
-    HomeTwoService,
+    HomeService,
     WINDOW_PROVIDERS
   ]
 })

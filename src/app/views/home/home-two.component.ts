@@ -1,29 +1,32 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LandingFixService } from '../../shared/services/landing-fix.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute }    from '@angular/router';
 
-import { HomeTwoService }    from './home-two.service';
+import { HomeService }       from './home.service';
 
 @Component({
   selector: 'app-home-two',
   template: `
   <app-header></app-header>
-  <app-cta></app-cta>
+  <app-intro></app-intro>
   <app-contact [backgroundGray]="true"></app-contact>  
   <app-footer></app-footer>`,
-  providers: [HomeTwoService]
+  providers: [HomeService]
 })
 export class HomeTwoComponent implements OnInit, OnDestroy {
 
   constructor(private fix: LandingFixService,
               private route: ActivatedRoute,
-              private homeTwoService: HomeTwoService) { }
+              private homeService: HomeService) { }
 
   ngOnInit() {
     this.fix.addFix();
+
     this.route.params.subscribe(params => {
-      this.homeTwoService.textSetter(params.pagename);
+      let prms = params.pagename;
+      this.homeService.textSetter(prms);
     });
+
   }
 
   ngOnDestroy() { this.fix.removeFix(); }

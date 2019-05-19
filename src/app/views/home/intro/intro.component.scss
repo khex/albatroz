@@ -1,11 +1,11 @@
 .home-intro-section {
   background: url('../../../../assets/images/home-bg.jpg') no-repeat center center;
+  padding-top: 40px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 100px;
   color: #ffffff;
   overflow: hidden
 }
@@ -17,13 +17,13 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
 }
 .home-intro-desc {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
   font-size: 16px;
   //font-weight: 400;
   //line-height: 32px;
 }
 .intro-list {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
 }
 .intro-product {
   position: relative;
@@ -60,7 +60,7 @@
 
 @media (max-width: 767px) {
   .home-intro-section {
-    padding: 100px 0 60px;
+    padding: 20px 0 10px;
   }
   .home-intro-title {
     margin: 0 0 30px;
@@ -70,7 +70,7 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
   }
   .home-intro-desc {
-    margin: 0 0 40px;
+    margin: 0 0 10px;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;

@@ -1,72 +1,27 @@
-<section id="portfolio-section" class="portfolio home-section" [ngClass]="{'light-gray': backgroundGray}">
-  <div class="container">
-
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-      <div fxFlex="33.33">
+<section id="portfolio-section"
+         class="portfolio home-section"
+         [ngClass]="{'light-gray': backgroundGray}">
+  <div  class="container"
+        fxLayout="row wrap" 
+        fxLayout.lt-sm="column" 
+        fxLayoutGap="32px" 
+        fxLayoutAlign="flex-start">
+    <!--
+      blog.angularindepth.com/angular-flex-layout-flexbox-and-grid-layout-for-angular-component-6e7c24457b63
+    -->
+    <ng-container *ngFor="let cd of cardData">
+      <div fxFlex="0 1 calc(33.3% - 32px)"
+           fxFlex.lt-md="0 1 calc(50% - 32px)"
+           fxFlex.lt-sm="100%"
+           class="port-card">
         <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-hotel.jpg">
+          <img mat-card-image [src]=cd.image>
           <mat-card-content>
-            <h5><strong><a [routerLink]="'/uk/hotel'">Готель</a></strong></h5>
-            <p>На території комплексу розташований готель з девятьма затишними 2-х місними номерами.</p>
+            <h5><strong><a [routerLink]="[cd.link]">{{cd.name}}</a></strong></h5>
+            <p>{{cd.text}}</p>
           </mat-card-content>
         </mat-card>
       </div>
-
-      <div fxFlex="33.33">
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-kolyby.jpg">
-          <mat-card-content>
-            <h5><strong><a [routerLink]="'/uk/kolyby'">Колиби</a></strong></h5>
-            <p>Невеликі колиби в карпатському стилі розраховані на чотирьох чоловік.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="33.33">
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-stolyk.jpg">
-          <mat-card-content>
-            <h5><strong><a [routerLink]="'/uk/altanki'">Альтанки</a></strong></h5>
-            <p>З мангалом та дашком, щоб яскраве сонце чи дощ не зупсували Ваш відпочинок.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-    </div>
-
-    <br>
-
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-      <div fxFlex="33.33">
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-kafe.jpg">
-          <mat-card-content>
-            <h5><strong><a [routerLink]="'/uk/kafe'">Кафе-Крамничка</a></strong></h5>
-            <p>Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="33.33">
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-sauna.jpg">
-          <mat-card-content>
-            <h5><strong><a [routerLink]="'/uk/sauna'">Сауна</a></strong></h5>
-            <p>Adipisci quas repellat sed. Quasi quaerat aut nam possimus vitae dignissimos, sapiente.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="33.33">
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/images/about-sauna.jpg">
-          <mat-card-content>
-            <h5><strong><a href="">Сауна</a></strong></h5>
-            <p>Adipisci quas repellat sed. Quasi quaerat aut nam possimus vitae dignissimos, sapiente.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-    </div>
-
+    </ng-container>
   </div>
 </section>

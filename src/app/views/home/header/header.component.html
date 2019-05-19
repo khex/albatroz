@@ -1,21 +1,48 @@
-<header id="home-header" [ngClass]="{'header-fixed': isFixed}">
-  <div class="container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
-    <div class="header-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+<header id="home-header"
+        [ngClass]="{'header-fixed': isFixed}">
+  <div  class="container"
+        fxLayout="row"
+        fxLayoutWrap="wrap"
+        fxLayoutAlign="start center">
+
+    <div  class="header-mobile-top"
+          fxLayout="row"
+          fxLayoutWrap="wrap"
+          fxLayoutAlign="start center">
       <div class="home-logo mr-1">
-        <a [routerLink]="'/home'"><img src="assets/images/logo-alb.png" alt="Egret logo"></a>
+        <a [routerLink]="'/'">
+          <img src="assets/images/logo-alb.png" alt="Egret logo">
+        </a>
       </div>
-      <button mat-icon-button id="menu-toggle" (click)="toggleMenu()"><mat-icon>menu</mat-icon></button>
+      <button mat-icon-button
+              id="menu-toggle"
+             (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
     </div>
     <div fxFlex class="top-menu">
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/hotel'"><strong>Готель</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/kolyby'"><strong>Колиби</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/altanki'"><strong>Альтанки</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/sauna'"><strong>Сауна</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/kafe'"><strong>Кафе</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" [routerLink]="'/uk/home'"><strong>Ціни</strong></button>
-      <button mat-button id="dashboard-topbtn" class="hometop-btn" scrollTo="app-footer"><strong>Контакти</strong></button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/hotel')">
+        <strong>Готель</strong>
+      </button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/kolyby')">
+        <strong>Колиби</strong>
+      </button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/altanki')">
+        <strong>Альтанки</strong>
+      </button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/sauna')">
+        <strong>Сауна</strong>
+      </button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/kafe')">
+        <strong>Кафе</strong>
+      </button>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" (click)="headNav('/uk/prices')">
+        <strong>Ціни</strong>
+      </button>
       <span fxFlex></span>
-      <strong>(097) 457 27 91</strong>
+      <button mat-button id="dashboard-topbtn" class="hometop-btn">
+        <strong>Володимир: 097-457-27-91</strong>
+      </button>
     </div>
   </div>
 </header>

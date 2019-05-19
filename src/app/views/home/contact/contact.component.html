@@ -1,15 +1,13 @@
 <section id="contact-section" class="home-section" [ngClass]="{'light-gray': backgroundGray}">
   <div class="container">
+    <h3>Натисніть на зображення для збільшення.</h3>
     <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
 
-      <div fxFlex="33.333">
-        <div [innerHtml]="safeHtml"></div>
-      </div>
-
-      <div fxFlex="66.666">
+      <div fxFlex="100">
         <img *ngFor="let item of items; index as i"
              [lightbox]="i"
-             [src]="item.data.thumb">
+             [src]="item.data.thumb"
+             class="images">
       </div>
 
     </div>

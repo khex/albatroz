@@ -5,11 +5,13 @@ import { Http, HttpModule }  from '@angular/http';
 import { SharedModule }      from './shared/shared.module';
 import { rootRouterConfig }  from './app.routes';
 import { AppComponent }      from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import {
+  BrowserAnimationsModule }  from '@angular/platform-browser/animations';
+import {
+  ServiceWorkerModule }      from '@angular/service-worker';
 import { environment }       from '../environments/environment';
 import { HomeModule }        from './views/home/home.module';
-import { WelcomeComponent }  from './welcome.component';
+import { HomeOneComponent }  from './home-one.component';
 
 
 @NgModule({
@@ -19,10 +21,16 @@ import { WelcomeComponent }  from './welcome.component';
     HttpModule,
     HomeModule,
     SharedModule,
-    RouterModule.forRoot(rootRouterConfig, { useHash: false }),
+    RouterModule.forRoot(rootRouterConfig, {
+      anchorScrolling: 'enabled',
+      useHash: false
+    }),
     ServiceWorkerModule.register('ngsw-worker.js')
   ],
-  declarations: [AppComponent, WelcomeComponent],
+  declarations: [
+    AppComponent,
+    HomeOneComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,10 +1,10 @@
 import { Routes }            from '@angular/router';
-import { WelcomeComponent } from './welcome.component';
+import { HomeOneComponent }  from './home-one.component';
 
 export const rootRouterConfig: Routes = [
 
 //{ path: '',   redirectTo: 'uk/home', pathMatch: 'full' },
-  { path: '',   component: WelcomeComponent },
+  { path: '',   component: HomeOneComponent },
   { path: 'uk', loadChildren: './views/home/home.module#HomeModule'},
   { path: '**', redirectTo: ''} // 'uk/home'},
   /**

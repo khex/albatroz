@@ -8,7 +8,9 @@ ServiceWorker needs https!
 
 tracert albatroz.lviv.ua
 ```
-
+# ToDo
+  [ ] `app/views/home/*.*` >> `app/views/*.*`
+  [ ] repair hamburger menu
 
 ### AppModule
 Самый верхний модуль в иерархии приложения.
