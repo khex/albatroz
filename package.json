@@ -1,0 +1,31 @@
+{
+  "name": "albatroz",
+  "version": "1.4.1",
+  "description": "website of recreational complex \"Albatross\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khex/albatroz.git"
+  },
+  "keywords": [
+    "spa",
+    "nodejs",
+    "pug"
+  ],
+  "author": "khex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khex/albatroz/issues"
+  },
+  "homepage": "https://github.com/khex/albatroz#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "*",
+    "gulp-prettify": "^0.4.0",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}

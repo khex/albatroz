@@ -1,0 +1,119 @@
+<!doctype html>
+html(lang='uk')
+	head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Відпочинковий комплекс Альбатрос у селі Воля-Гомулецька.')
+    meta(name='author', content='facebook.com/khaljava')
+
+    <meta name='yandex-verification' content='45eb2b45f3860b5b' />
+    <meta property="og:title" content="щиро запрошує Вас відпочити на берегу озера." />
+    <meta property="og:site_name" content="Альбатрос" />
+    <meta property="og:url" content="http://albatroz.lviv.ua" />
+    <meta property="og:image" content="http://albatroz.lviv.ua/images/slide-one.jpg" />
+    <meta property="og:type" content="place" />
+    <meta property="og:locale" content="uk_UA" />
+
+    <meta name="google-site-verification" content="6M9KHlpZp-bpHTDfP5evIiwOU3cjGTFpZ0eTOGCkpbw" />
+
+    title Альбатрос - відпочинковий комплекс у селі Воля-Гомулецька.
+    link(rel="icon", href="favicon.ico", type="image/x-icon")
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon") 
+
+    // insted of loading via CDN 2 files: bootstrap.3.3.7.css & cerulean.css
+    link(rel='stylesheet', type='text/css', media='screen',
+         href='stylesheets/twbt-cerulean.min.css')
+    link(rel='stylesheet', type='text/css', media='screen',
+         href='stylesheets/custom.css', )
+    link(rel='stylesheet',
+         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+    link(rel='stylesheet',
+         href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css')
+    //  link(href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300', rel='stylesheet', type='text/css')
+  body
+    include ./partials/navbar.jade
+    div.container
+      //  contacts section
+      div.row#slider
+        div.col-md-12
+          img.img-responsive(src="images/slide-one.jpg" alt="Main Logo")
+
+      //  service section
+      div.row#service
+
+        div.col-md-12
+          div .metadata(hidden)
+            div(itemscope, itemtype="http://schema.org/LocalBusiness")
+              span(itemprop="name") Альбатрос
+              span(itemprop="alternateName") База Альбатрос   
+              span(itemprop="description") база відпочинку у селі Воля-Гомулецька
+              span(itemprop="priceRange") $$
+              span(itemprop="telephone") (097) 457-27-91
+              span(itemprop="url") http://albatroz.lviv.ua
+              span(itemprop="openingHours", content="Mo, Tu, We, Th, Fr, Sa, Su 08:00-23:00") Понеділок - Неділя: з 8:00 до 23:00
+              div(itemscope, itemprop="address", itemtype="http://schema.org/PostalAddress")
+                span(itemprop="addressCountry") UA
+                span(itemprop="addressRegion") Львівська обл.
+                span(itemprop="addressLocality") с. Воля-Гомулецька
+                span(itemprop="streetAddress") вул. Озерна 6
+              div(itemscope, itemprop="geo", itemtype="http://schema.org/GeoCoordinates")
+                meta(itemprop="latitude", content="49.925427")
+                meta(itemprop="longitude", content="23.996117")
+          
+          blockquote.blockquote
+            p Втомились від шаленного ритму великого міста та щоденної рутини, скучили за свіжим повітрям та мальовничою природою? Тоді ми запрошуємо Вас у відпочинковий комплекс "Альбатрос", що розташований на березі озера, в кількох кілометрах від Брюхович, у селі Воля-Гомулецька. Величезне озеро та неповторний немов запрошують Вас прогулятись по берегу, відпочити за затишними столиками чи погодувати лебедів. Стоянка, кафе з українською кухнею, готель чи окремі колиби, привітний персонал створюють умови для повноцінного відпочинку Вас та вашої компанії.
+
+      // about section
+      div.row.about.text-center#about
+
+        div.col-md-4.col-sm-6
+          div.thumbnail
+            img.img-rounded(src='images/about-hotel.jpg', alt='готель на базі відпочинку Альбатрос у с. Воля Гомулецька')
+            div.caption
+              h3 Готель
+              p На території комплексу розташований готель з девятьма затишними 2-х місними номерами. 
+
+        div.col-md-4.col-sm-6
+          div.thumbnail
+            img.img-rounded(src='images/about-kafe.jpg', alt='кафе на базі відпочинку Альбатрос у с. Воля Гомулецька')
+            div.caption
+              h3 Кафе-Крамничка
+              p Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви української кухні.
+
+        div.col-md-4.col-sm-6
+          div.thumbnail
+            img.img-rounded(src='images/about-stolyk.jpg', alt='столики беседки на базі відпочинку Альбатрос у с. Воля Гомулецька')
+            div.caption
+              h3 Столики
+              p З мангалом та дашком, щоб яскраве сонце чи дощ не зупсували відпочинок Вам та вашій компанії.
+
+ 
+      //  prices section 
+      section#prices.text-center
+        h2 ЦІНИ
+        .row 
+          .col-md-4.col-sm-6
+            ul.list-group
+              li.list-group-item.active
+                h3.list-group-item-heading Вхід
+              li.list-group-item Доросді <b>20</b> грн.
+              li.list-group-item Діти безкоштовно.
+              li.list-group-item Стоянка <b>30</b> грн.
+
+          .col-md-4.col-sm-6
+            ul.list-group
+              li.list-group-item.active
+                h3.list-group-item-heading Проживання
+              li.list-group-item Готель 2х місний <b>300</b> грн.
+              li.list-group-item Колиба 4 ліжка <b>270</b> грн.
+     
+          .col-md-4.col-sm-6
+            ul.list-group
+              li.list-group-item.active
+                h3.list-group-item-heading Столики
+              li.list-group-item На 10 чоловік <b>150</b> грн.
+              li.list-group-item На 20 чоловік <b>150</b> грн.
+              li.list-group-item На 30 чоловік <b>150</b> грн.
+              li.list-group-item Одна в'язка дров <b>30</b> грн.
+             
+    include ./partials/footer.jade
