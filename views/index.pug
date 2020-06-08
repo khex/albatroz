@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+html(lang='uk')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Відпочинковий комплекс «Альбатрос»
+    meta(name='description',
+         content='Відпочинковий комплекс «Альбатрос» біля Львова у с. Воля-Гомулецька, щиро запрошує Вас відпочити серед природи на березі мальовничого зера.і')
+    include ./partials/social.pug
+    include ./partials/link.pug
+    include ./partials/script.pug
+
+  body
+    include ./partials/navbar.pug
+
+    //
+      JUMBOTRON
+    .container
+      .jumbotron
+        // <h1 class="display-3">Відпочинковий комплекс «Альбатрос»</h1>
+
+    //
+      ABOUT
+    .container.about
+      .row.justify-content-md-center
+        .col-lg-8.col-md-10.col-sm-12
+          h1 Відпочинковий комплекс «Альбатрос»
+          p
+            | Втомились від ритму міста та щоденної рутини, скучили за свіжим повітрям та мальовничою природою - тоді ми запрошуємо Вас у відпочинковий комплекс "Альбатрос".
+          p
+            | Ми пропонуємо своїм гостям заміський відпочинок на березі озера, що знаходиться неподалік від Львова, в кількох кілометрах від смт. Брюховичі, у селі Воля-Гомулецька Жовківського району.
+
+    //
+      CARDS
+    #cards.container
+      .row
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Готель
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-hotel.jpg' alt='Card image')
+              .card-body
+                p.card-text У нашому готелі дев'ять 2x місних затишних номерів.
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Колиби
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-kolyby.jpg' alt='Card image')
+              .card-body
+                p.card-text Невеликі колиби в карпатському стилі розраховані на чотирьох осіб.
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Альтанки
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-stolyk.jpg' alt='Card image')
+              .card-body
+                p.card-text Кожна альтанка облаштована мангалом та дашком.
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Кафе-Крамничка
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-kafe.jpg' alt='Card image')
+              .card-body
+                p.card-text Тут можна придбати проходжуючі напої та скуштувати свіжоприготовані страви.
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Сауна
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-sauna.jpg' alt='Card image')
+              .card-body
+                p.card-text Пропонуємо доповнити Ваш відпочинок у нашій лазні на дровах.
+        .col-lg-4.col-md-6.col-sm-12.mb-4
+          .bs-component
+            .card.bg-primary.text-white.mb-3
+              h3.card-header Озеро
+              a.text-muted(href='#')
+                img(style='width: 100%; display: block;' src='images/about-lake.jpg' alt='Card image')
+              .card-body
+                p.card-text Наша база відпочинку розташована на березі мальовничого озера.
+
+    //
+      PRICES
+    #cards.container
+      .row.card-deck.mb-3.text-center
+        .col-lg-3.col-md-6.col-sm-12
+          .bs-component
+            .card.mb-4.shadow-sm
+              .card-header.bg-primary.text-white
+                h4.my-0.font-weight-normal Вхід
+              .card-body
+                ul.list-unstyled.mt-3.mb-4
+                  li.card-title.pricing-card-title
+                    | Дорості - 
+                    b 50 ₴
+                  li.card-title.pricing-card-title
+                    | Діти до 15 р. - 
+                    b безк.
+                  li.card-title.pricing-card-title
+                    | Стоянка - 
+                    b 20 ₴
+        .col-lg-3.col-md-6.col-sm-12
+          .bs-component
+            .card.mb-4.shadow-sm
+              .card-header.bg-primary.text-white
+                h4.my-0.font-weight-normal Проживання
+              .card-body
+                ul.list-unstyled.mt-3.mb-4
+                  li.card-title.pricing-card-title Готель 2х місний номер 
+                  li.card-title.pricing-card-title
+                    b 350 ₴ / доба
+                  li.card-title.pricing-card-title Колиба на 4х осіб
+                  li.card-title.pricing-card-title
+                    b 800 ₴ / доба
+        .col-lg-3.col-md-6.col-sm-12
+          .bs-component
+            .card.mb-4.shadow-sm
+              .card-header.bg-primary.text-white
+                h4.my-0.font-weight-normal Альтанки
+              .card-body
+                ul.list-unstyled.mt-3.mb-4
+                  li.card-title.pricing-card-title
+                    | На 10 осіб - 
+                    b 400 ₴
+                  li.card-title.pricing-card-title
+                    | На 20 осіб - 
+                    b 400 ₴
+                  li.card-title.pricing-card-title
+                    | На 30 осіб - 
+                    b 400 ₴
+                  li.card-title.pricing-card-title
+                    | На 40 осіб - 
+                    b 400 ₴
+        .col-lg-3.col-md-6.col-sm-12
+          .bs-component
+            .card.mb-4.shadow-sm
+              .card-header.bg-primary.text-white
+                h4.my-0.font-weight-normal Сауна
+              .card-body
+                ul.list-unstyled.mt-3.mb-4
+                  li.card-title.pricing-card-title
+                    | Сауна - 
+                    b 350 ₴ / год.
+                  li.card-title.pricing-card-title
+                    | Простирало - 
+                    b 30 ₴ 
+                  li.card-title.pricing-card-title
+                    | Віник - 
+                    b 50 ₴
+                
+
+    include ./partials/footer.pug

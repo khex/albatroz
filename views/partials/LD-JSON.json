@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "UA",
+    "addressRegion": "Львівська обл., Жовківський р-н",
+    "addressLocality": "село Воля-Гомулецька",
+    "streetAddress": "вул. Озерна 6"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "49.925427",
+    "longitude": "23.996117"
+  },
+  "name": "База Альбатрос",
+  "alternateName": "База відпочинку Альбатрос",
+  "description": "База відпочинку у селі Воля-Гомулецька",
+  "image": "http://albatroz.lviv.ua/images/amp-main.jpg",
+  "priceRange": "$",
+  "telephone": "(097) 457-27-91",
+  "url": "http://albatroz.lviv.ua",
+  "sameAs": [
+    "https://www.facebook.com/albatroz.lviv",
+    "https://vk.com/albatroz.lviv"
+  ],
+  "openingHours": "Mo-Su 08:00-23:00"
+}

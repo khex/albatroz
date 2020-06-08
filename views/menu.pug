@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+html(lang='uk')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Меню
+    meta(name='description',
+         content='Меню у відпочинковому комплексі «Альбатрос»')
+    include ./partials/social.pug
+    include ./partials/link.pug
+    link(rel='stylesheet', href='styles/menu.css')
+    include ./partials/script.pug
+
+  body
+    include ./partials/navbar.pug
+
+
+    // menu
+    .content
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.mt-5
+            .page-section
+              h1.page-title Food Menu
+
+        //
+          First row
+        .row
+          // starter
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Фірмові страви
+              .menu-content
+                .row
+                  //.col-lg-3.col-md-3.col-sm-3.col-xs-12
+                  //  .dish-img
+                  //    a(href='#')
+                  //      img.img-circle.rounded-circle(src='images/menu/uha.png', alt='')
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Уха
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 30 ₴ 
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Риба запечена з овочами
+                      span.dish-meta 100 г.  
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Риба смажена
+                      span.dish-meta 100 г.  
+                      .dish-price
+                        p 30 ₴
+
+          // Soup
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Холодні закуски
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') М'ясне асорті
+                      span.dish-meta 100 / 100 / 100 / 20 г.
+                      .dish-price
+                        p 100 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Сирне асорті
+                      span.dish-meta 100 / 100 / 100 / 20 г.
+                      .dish-price
+                        p 100 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Овочеве асорті
+                      span.dish-meta 300 / 200 / 30 г.
+                      .dish-price
+                        p 45 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Малосольний гірок
+                      span.dish-meta 100 г. 
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Сало з часником
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 15 ₴
+
+          // main course
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Додатки
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') УЗВАР
+                      span.dish-meta 1 л.
+                      .dish-price
+                        p 50 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') ЛИМОН З ЦУКРОМ
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') МАСЛО
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 25 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') МАЙОНЕЗ
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') КЕТЧУП
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') СМЕТАНА
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 12 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') ОЛИВКИ В АСОРТИМЕНТІ
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 30 ₴
+
+        //  Second row
+        .row
+
+          //  Main cources
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Другі страви
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Вареники зі сметаною
+                      span.dish-meta 200 / 30 / 50 г.
+                      .dish-price
+                        p 35 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Вареники зі шкварками
+                      span.dish-meta 200 / 80 г.
+                      .dish-price
+                        p 35 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Пельмені домашні
+                      span.dish-meta 200 / 80 г.
+                      .dish-price
+                        p 45 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Деруни зі сметаною
+                      span.dish-meta 200 / 75 г. 
+                      .dish-price
+                        p 50 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Деруни по-селянськи
+                      span.dish-meta в глечику зі свининою
+                      span.dish-meta 200 / 75 г.
+                      .dish-price
+                        p 50 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Яєшня з двох яєць
+                      span.dish-meta 80 / 70 г.
+                      .dish-price
+                        p 20 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Яєшня з беконом
+                      span.dish-meta ковбасою 80 / 70 г.
+                      .dish-price
+                        p 25 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Омлет
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 27 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Хліб
+                      span.dish-meta одна скибка
+                      .dish-price
+                        p 1 ₴
+
+          // meat dishes
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title М'ясні страви
+              .menu-content
+                .row
+                  //.col-lg-3.col-md-3.col-sm-3.col-xs-12
+                  //  .dish-img
+                  //    a(href='#')
+                  //      img.img-circle.rounded-circle(src='images/menu/uha.png', alt='')
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Відбивна домашня свинна
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 30 ₴ 
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Відбивна запечена свинна
+                      span.dish-meta 100 г.  
+                      .dish-price
+                        p 35 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Відбивна куряча
+                      span.dish-meta 100 г.  
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Шашлик курячий
+                      span.dish-meta 150 г.  
+                      .dish-price
+                        p 45 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Шашлик свинний
+                      span.dish-meta 150 г.  
+                      .dish-price
+                        p 45 ₴
+
+
+          //  salads
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Салати
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Грецький
+                      span.dish-meta помідор / огірок / перець / сир фета  / маслини / олія
+                      span.dish-meta 150 г.
+                      .dish-price
+                        p 35 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Овочевий
+                      span.dish-meta помідор / огірок / цибуля / олія
+                      span.dish-meta 150 г.
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Капустяник
+                      span.dish-meta капуста свіжа / морква / олія
+                      span.dish-meta 150 г.
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Дністер
+                      span.dish-meta капуста / ковбаса / горошок / майонез
+                      span.dish-meta 100 г.
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Лісовий
+                      span.dish-meta куряче філе / гриби мариновані / огірок свіжий / яйце / майонез
+                      span.dish-meta 150 г.
+                      .dish-price
+                        p 40 ₴
+
+
+
+        //  therd
+        .row
+
+          //  soups
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Другі страви
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Борщ
+                      span.dish-meta 200 / 50 г.
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Бульйон курячий
+                      span.dish-meta 300 г.
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Солянка м'ясна
+                      span.dish-meta 300 г.
+                      .dish-price
+                        p 50 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Чанахи
+                      span.dish-meta 300 г. 
+                      .dish-price
+                        p 50 ₴
+
+          //  side dishes
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Гарніри
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Картопля фрі
+                      span.dish-meta 150 / 70 г.
+                      .dish-price
+                        p 30 ₴ 
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Картопля по-селянськи
+                      span.dish-meta 200 г.  
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Картопляне пюре
+                      span.dish-meta 200 / 30 / 30 г.  
+                      .dish-price
+                        p 30 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Картопля молода
+                      span.dish-meta 200 / 30 / 30 г. 
+                      .dish-price
+                        p 30 ₴
+
+          //  beverages
+          .col-lg-4.col-md-4.col-sm-6.col-xs-12.mb40
+            .menu-block
+              h3.menu-title Гарячі напої
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Кава заварна
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Кава розчинна
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Чав
+                      span.dish-meta в асортименті
+                      .dish-price
+                        p 10 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Нескафе 3 в 1
+                      .dish-price
+                        p 15 ₴
+              .menu-content
+                .row
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .dish-content
+                      h5.dish-title
+                        a(href='#') Капучіно
+                      .dish-price
+                        p 15 ₴
+
+          //  a(href='https://goo.gl/XgSVLQ', target='_blank') easetemplate
+
+    include ./partials/footer.pug

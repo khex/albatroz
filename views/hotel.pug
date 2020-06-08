@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+html(lang='uk')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Готель
+    meta(name='description',
+         content='Готель у відпочинковому комплексі «Альбатрос»')
+    include ./partials/social.pug
+    include ./partials/link.pug
+    include ./partials/script.pug
+
+  body
+    include ./partials/navbar.pug
+
+    //
+      JUMBOTRON
+    .container
+      .jumbotron
+        // <h1 class="display-3">Відпочинковий комплекс «Альбатрос»</h1>
+
+    //
+      ABOUT
+    .container.about
+      .row.justify-content-md-center
+        .col-lg-8.col-md-10.col-sm-12
+          h1 Альтанкі
+          p
+            | Загалом на нашій базі розташовано 24 столика на 10, 20 та 30 чоловік. Всі вони мають дашок, котрий захиститьВас та вашу компанію від палючого сонця вдень та від дощу у непогоду, та мангал.
+          p
+            | Обирайте самі місце відпочинку - у затінку на берегу озера чи на відкритій сонячній галявні.
+          p
+            | Вартість будь-якого столика - 400 грн, а в'язки дров - 50 грн. 
+
+
+    //
+      GALLERY
+    .container
+      .row.popup-gallery
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-1-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/hot-1-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-2-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/hot-2-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-3-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/hot-3-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-4-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/hot-4-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-5-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/hot-5-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-6-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/hot-6-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.c
+          a(href='images/medium/hot-7-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/hot-7-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/hot-8-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/hot-8-md.jpg')
+
+
+    include ./partials/footer.pug

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+html(lang='uk')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Колиби
+    meta(name='description',
+         content='Колиби у відпочинковому комплексі «Альбатрос»')
+    include ./partials/social.pug
+    include ./partials/link.pug
+    include ./partials/script.pug
+
+  body
+    include ./partials/navbar.pug
+
+    //
+      JUMBOTRON
+    .container
+      .jumbotron
+        // <h1 class="display-3">Відпочинковий комплекс «Альбатрос»</h1>
+
+    //
+      ABOUT
+    .container.about
+      .row.justify-content-md-center
+        .col-lg-12
+          h1 Колиби
+          p
+            | Хочете заночувати великою компанією та по більш низькій ціні - значить вам потрібна колиба. Наші колиби розраховані на 4х чоловік.
+          p
+            | У вартість також входить набор постілі та накритий столик з мангалом біля самої колиби.
+          p
+            | Вартість колиби - 800 грн./добу. 
+
+    //
+      GALLERY
+    .container
+      .row.popup-gallery
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-1-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/kol-1-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-2-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/kol-2-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-3-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/kol-3-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-4-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/kol-4-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-5-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/kol-5-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-6-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/kol-6-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.c
+          a(href='images/medium/kol-7-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/kol-7-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/kol-8-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/kol-8-md.jpg')
+
+
+    include ./partials/footer.pug

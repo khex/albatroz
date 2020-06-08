@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang='uk')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Меню
+    meta(name='description',
+         content='Меню у відпочинковому комплексі «Альбатрос»')
+    include ./partials/social.pug
+    include ./partials/link.pug
+    include ./partials/script.pug
+
+  body
+    include ./partials/navbar.pug
+
+    //
+      JUMBOTRON
+    .container
+      .jumbotron
+        // <h1 class="display-3">Відпочинковий комплекс «Альбатрос»</h1>
+
+    //
+      ABOUT
+    .container.about
+      .row.justify-content-md-center
+        .col-lg-12
+          h1 Сауна
+          p Наша сауна на дровах розрахована на 6 осіб.
+          p Вартість сауни - 200 грн./год. 
+
+    //
+      GALLERY
+    .container
+      .row.popup-gallery
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/sau-1-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/sau-1-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/sau-2-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/sau-2-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/sau-3-md.jpg', title='The Cleaner')
+            img.img-thumbnail(src='images/medium/sau-3-md.jpg')
+        .col-lg-3.col-md-4.col-sm-6.mb-4
+          a(href='images/medium/sau-4-md.jpg', title='Winter Dance')
+            img.img-thumbnail(src='images/medium/sau-4-md.jpg')
+
+    include ./partials/footer.pug
