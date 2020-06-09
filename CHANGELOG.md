@@ -6,7 +6,7 @@
 
 ### styles
 [ ] redraw `logo` image
-
+[ ] bacground pattern with gray and seagull
 
 ### [3.5] - bug fix
 [x] add prices
