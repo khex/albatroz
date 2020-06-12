@@ -69,33 +69,34 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
-      <img src="https://albatroz.lviv.ua/assets/images/logo-alb.png" alt="логотип бази Альбатрос" />
+      <img src="images/logo.png" alt="логотип бази Альбатрос" />
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
+    <div class="d-flex flex-grow-1"><span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile--></span>
+      <!--  a.navbar-brand.d-none.d-lg-inline-block(href='/') Navbar 6--><a class="navbar-brand mx-auto d-lg-none d-inline-block" href="#"> (097) 457 27 91 </a>
+      <div class="w-100 text-right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-left" id="myNavbar">
+      <ul class="navbar-nav ml-auto flex-nowrap">
         <li class="nav-item active"><a class="nav-link" href="/">Головна<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/hotel">Готель</a>
+        <li class="nav-item"><a class="nav-link" href="/hotel.html">Готель</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/kolyby">Колиби</a>
+        <li class="nav-item"><a class="nav-link" href="/kolyby.html">Колиби</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/altanki">Альтанки</a>
+        <li class="nav-item"><a class="nav-link" href="/altanki.html">Альтанки</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/kafe">Кафе</a>
+        <li class="nav-item"><a class="nav-link" href="/kafe.html">Кафе</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/sauna">Сауна</a>
+        <li class="nav-item"><a class="nav-link" href="/sauna.html">Сауна</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/menu">Меню</a>
+        <li class="nav-item"><a class="nav-link" href="/menu.html">Меню</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/banket">Банкет</a>
+        <li class="nav-item"><a class="nav-link" href="/banket.html">Банкет</a>
         </li>
-        <!--li.nav-item-->
-        <!--  a.nav-link(href='bankety') Володимир: 097-457-27-91-->
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="" data-target="#myModal" data-toggle="modal">(097) 457 27 91</a>
+        <li class="nav-item"><a class="nav-link" href="index.html#footer">Ціни</a>
         </li>
       </ul>
     </div>
@@ -200,7 +201,7 @@
     </div>
   </div>
   <!--PRICES-->
-  <div class="container" id="cards">
+  <div class="container" id="prices">
     <div class="row card-deck mb-3 text-center">
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="bs-component">
@@ -282,7 +283,8 @@
       </div>
     </div>
   </div>
-  <footer>
+  <!-- footer-->
+  <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 contact-info">

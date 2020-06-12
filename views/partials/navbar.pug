@@ -1,38 +1,33 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
   a.navbar-brand(href='/')
-    img(src='https://albatroz.lviv.ua/assets/images/logo-alb.png',
-        alt='логотип бази Альбатрос')
-
-  button.navbar-toggler(type='button'
-                        data-toggle='collapse'
-                        data-target='#navbarColor01'
-                        aria-controls='navbarColor01'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-
-  #navbarColor01.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
+    img(src='images/logo.png', alt='логотип бази Альбатрос')
+  .d-flex.flex-grow-1
+    span.w-100.d-lg-none.d-block
+      // hidden spacer to center brand on mobile
+    //  a.navbar-brand.d-none.d-lg-inline-block(href='/') Navbar 6
+    a.navbar-brand.mx-auto.d-lg-none.d-inline-block(href='#')  (097) 457 27 91 
+    .w-100.text-right
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar')
+        span.navbar-toggler-icon
+  #myNavbar.collapse.navbar-collapse.flex-grow-1.text-left
+    ul.navbar-nav.ml-auto.flex-nowrap
       li.nav-item.active
         a.nav-link(href='/')
           | Головна
           span.sr-only (current)
       li.nav-item
-        a.nav-link(href='/hotel') Готель
+        a.nav-link(href='/hotel.html') Готель
       li.nav-item
-        a.nav-link(href='/kolyby') Колиби
+        a.nav-link(href='/kolyby.html') Колиби
       li.nav-item
-        a.nav-link(href='/altanki') Альтанки
+        a.nav-link(href='/altanki.html') Альтанки
       li.nav-item
-        a.nav-link(href='/kafe') Кафе
+        a.nav-link(href='/kafe.html') Кафе
       li.nav-item
-        a.nav-link(href='/sauna') Сауна
+        a.nav-link(href='/sauna.html') Сауна
       li.nav-item
-        a.nav-link(href='/menu') Меню
+        a.nav-link(href='/menu.html') Меню
       li.nav-item
-        a.nav-link(href='/banket') Банкет
-      //li.nav-item
-      //  a.nav-link(href='bankety') Володимир: 097-457-27-91
-    ul.navbar-nav
+        a.nav-link(href='/banket.html') Банкет
       li.nav-item
-        a.nav-link(href='', data-target='#myModal', data-toggle='modal') (097) 457 27 91
+        a.nav-link(href='index.html#footer') Ціни
