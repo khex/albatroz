@@ -76,11 +76,17 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">
-      <img src="images/logo.png" alt="логотип бази Альбатрос" />
-    </a>
-    <div class="d-flex flex-grow-1"><span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile--></span>
-      <!--  a.navbar-brand.d-none.d-lg-inline-block(href='/') Navbar 6--><a class="navbar-brand mx-auto d-lg-none d-inline-block" href="#">(097) 457 27 91 </a>
+    <!--a.navbar-brand(href='/')-->
+    <!--  img(src='images/logo.png', alt='логотип бази Альбатрос')-->
+    <div class="d-flex flex-grow-1">
+      <!-- span.w-100.d-lg-none.d-block-->
+      <!-- hidden spacer to center brand on mobile-->
+      <a class="navbar-brand d-none d-lg-inline-block" href="/">
+        <img src="images/logo.png" alt="логотип бази Альбатрос" />
+      </a>
+      <a class="navbar-brand mx-auto d-lg-none d-inline-block" href="#">
+        <img src="images/logo-small.png" alt="логотип бази Альбатрос" /><span class="ml-4">(097) 457 27 91 </span>
+      </a>
       <div class="w-100 text-right">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span>
         </button>

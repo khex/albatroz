@@ -1,11 +1,14 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
-  a.navbar-brand(href='/')
-    img(src='images/logo.png', alt='логотип бази Альбатрос')
+  //a.navbar-brand(href='/')
+  //  img(src='images/logo.png', alt='логотип бази Альбатрос')
   .d-flex.flex-grow-1
-    span.w-100.d-lg-none.d-block
-      // hidden spacer to center brand on mobile
-    //  a.navbar-brand.d-none.d-lg-inline-block(href='/') Navbar 6
-    a.navbar-brand.mx-auto.d-lg-none.d-inline-block(href='#') (097) 457 27 91 
+    // span.w-100.d-lg-none.d-block
+    // hidden spacer to center brand on mobile
+    a.navbar-brand.d-none.d-lg-inline-block(href='/')
+      img(src='images/logo.png', alt='логотип бази Альбатрос')
+    a.navbar-brand.mx-auto.d-lg-none.d-inline-block(href='#')
+      img(src='images/logo-small.png', alt='логотип бази Альбатрос')
+      span.ml-4 (097) 457 27 91 
     .w-100.text-right
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar')
         span.navbar-toggler-icon
