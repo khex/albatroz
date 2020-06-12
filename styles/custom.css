@@ -1,5 +1,5 @@
 
-.nav-link {
+.nav-link, .dropdown-item {
   font-size: 1.00rem;
   font-weight: 600;
 }

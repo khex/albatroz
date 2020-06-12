@@ -19,18 +19,22 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
           | Головна
           span.sr-only (current)
       li.nav-item
-        a.nav-link(href='/hotel.html') Готель
-      li.nav-item
-        a.nav-link(href='/kolyby.html') Колиби
+        a.nav-link(href='index.html#prices') Ціни
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='/', id='dropdown04', data-toggle='dropdown',
+                                   aria-haspopup='true', aria-expanded='false') Проживання
+        div.dropdown-menu
+          a.dropdown-item(href='/hotel.html') Готель
+          a.dropdown-item(href='/kolyby.html') Колиби
       li.nav-item
         a.nav-link(href='/altanki.html') Альтанки
       li.nav-item
         a.nav-link(href='/kafe.html') Кафе
       li.nav-item
         a.nav-link(href='/sauna.html') Сауна
-      li.nav-item
-        a.nav-link(href='/menu.html') Меню
-      li.nav-item
-        a.nav-link(href='/banket.html') Банкет
-      li.nav-item
-        a.nav-link(href='index.html#prices') Ціни
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='/', id='dropdown04', data-toggle='dropdown',
+                                   aria-haspopup='true', aria-expanded='false') Меню
+        div.dropdown-menu
+          a.dropdown-item(href='/hotel.html') Кафе
+          a.dropdown-item(href='/kolyby.html') Банкетне
