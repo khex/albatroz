@@ -6,6 +6,15 @@ script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bo
 script(src='https://www.google-analytics.com/analytics.js')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
 script(src='styles/popup.js')
+
+// Global site tag (gtag.js) - Google Analytics
+script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-80151883-1")
+script(type="text/javascript").
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-80151883-1');
+
 script(type='application/ld+json').
   {
   "@context": "http://schema.org",
