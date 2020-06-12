@@ -4,6 +4,11 @@
   font-weight: 600;
 }
 
+.navbar-brand {
+  font-size: 1.00rem;
+  font-weight: 600;
+}
+
 .jumbotron {
   background-image: url(../images/slide-two.jpg);
   background-size: cover;
