@@ -24,14 +24,16 @@
   font-weight: 800;
 }
 
-
+/**
+ *  PRICES
+ */
 #cards {
   font-size: 1.00rem;
   font-weight: 400;
 }
 
-.red {
-  color: red !important;
+.card-price {
+  margin: 0px;
 }
 
 .prices {
@@ -40,14 +42,10 @@
   font-weight: 400;
 }
 
-
 .pricing-header {
   max-width: 700px;
 }
 
-.card-deck .card {
-  min-width: 220px;
-}
 
 /**
  *  FOOTER
