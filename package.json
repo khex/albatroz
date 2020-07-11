@@ -4,6 +4,7 @@
   "description": "Recreation base \"Albatros\"",
   "main": "index.html",
   "scripts": {
+    "build": "gulp views",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
