@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /src/.gitignore
+/foo-boo
 
 # dependencies
 /node_modules
