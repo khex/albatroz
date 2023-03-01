@@ -9,9 +9,9 @@
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ```
-ng build --prod --base-href "/albatroz/" --deployUrl="/albatroz/"
+ng build --prod --base-href "/albatroz/" --deployUrl "/albatroz/"
 ```
-
+https://stackoverflow.com/questions/51182322/whats-the-difference-between-base-href-and-deploy-url-parameters-of-angular
 ### --base-href
 for proper source routing on GitHub Pages.
 like khex.github.io/albatroz
