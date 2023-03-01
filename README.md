@@ -1,8 +1,8 @@
 # Albatroz
 
 ## Links
- - code-maze.com/angular-material-navigation/
- - medium.com/@michelestieven/organizing-angular-applications-f0510761d65a
+- code-maze.com/angular-material-navigation/
+- medium.com/@michelestieven/organizing-angular-applications-f0510761d65a
 
 ## Build
 
@@ -13,13 +13,14 @@ ng build --prod --base-href "/albatroz/" --deployUrl="/albatroz/"
 ```
 
 ### --base-href
-  for proper source routing on GitHub Pages.
+for proper source routing on GitHub Pages.
+like khex.github.io/albatroz
 
 ### --deploy-url
-  Link for code sourses <script src="/albatroz/main.e09a...4b74.js"></script>
+Link for code sourses <script src="/albatroz/main.e09a...4b74.js"></script>
 
 ### --deleteOutputPath
-  перезаписывает существующие файлы и не трогает остальные, как папки с картинками
+перезаписывает существующие файлы и не трогает остальные, как папки с картинками
 
 ```
 npx ngh
