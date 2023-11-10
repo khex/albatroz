@@ -104,7 +104,7 @@ export class HomeService {
           ph: 'assets/images/slide-four.jpg'
         },
         imgs: [
-          {src: 'assets/images/medium/pri-1-md.jpg', thumb: 'assets/images/thumbs/pri-1-thumb.jpg'},
+          {src: 'assets/images/medium/pri-2-md.jpg', thumb: 'assets/images/thumbs/pri-2-thumb.jpg'},
           {src: 'assets/images/medium/pri-2-md.jpg', thumb: 'assets/images/thumbs/pri-2-thumb.jpg'},
           {src: 'assets/images/medium/pri-3-md.jpg', thumb: 'assets/images/thumbs/pri-3-thumb.jpg'},
           {src: 'assets/images/medium/pri-4-md.jpg', thumb: 'assets/images/thumbs/pri-4-thumb.jpg'},
